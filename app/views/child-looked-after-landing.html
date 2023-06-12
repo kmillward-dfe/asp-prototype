@@ -1,0 +1,54 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Child Looked After – Children's Social Care
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="/index.html"><strong>Home</strong></a></li>
+    <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
+    <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
+    <li><a href="/child-protection-landing.html"><strong>Child Protection</strong></a></li>
+    <li><a href="/child-looked-after-landing.html"><strong>Child Looked After</strong></a></li>
+    <li><a href="/ehcp-referrals.html"><strong>Education Health Care Plans</strong></a></li>
+    <li><a href="/glossary.html"><strong>Glossary</strong></a></li>
+  </ul>
+</nav>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        Child Looked After (CLA)
+      </h1>
+      
+      <p>A Child Looked After is a child that has been within the care of the Local Authority for more than 24 hours.</p>
+
+      <ul class="landing-grid gridtwo">
+        <li class="chevron-card">
+          <a class="chevron-card__wrapper" href="/cla-total-current-cases.html">
+            <div class="inner-text">
+              <p class="header"><strong>Total & Current Cases</strong></p>
+              <p class="intro-text">Explanation about this page goes here. Explanation about this page goes here. Explanation about this page goes here. Explanation about this page goes here.</p>
+            </div>
+          </a>
+        </li>
+        <li class="chevron-card">
+          <a class="chevron-card__wrapper" href="/cla-closed-cases.html">
+            <div class="inner-text">
+              <p class="header"><strong>Closed Cases</strong></p>
+              <p class="intro-text">Explanation about this page goes here. Explanation about this page goes here. Explanation about this page goes here. Explanation about this page goes here.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    
+    </div>
+
+    </div>
+  </div>
+
+{% endblock %}

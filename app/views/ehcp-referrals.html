@@ -1,0 +1,213 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Education Health Care Plans – Children's Social Care
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="/index.html"><strong>Home</strong></a></li>
+    <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
+    <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
+    <li><a href="/child-protection-landing.html"><strong>Child Protection</strong></a></li>
+    <li><a href="/child-looked-after-landing.html"><strong>Child Looked After</strong></a></li>
+    <li><a href="/ehcp-referrals.html"><strong>Education Health Care Plans</strong></a></li>
+    <li><a href="/glossary.html"><strong>Glossary</strong></a></li>
+  </ul>
+</nav>
+
+<h1 class="govuk-heading-xl">Education Health Care Plans (EHCP)</h1>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row latest-activity">
+      <!--FILTERS-->
+      <div class="govuk-grid-column-one-third filters">
+        <h2>Filters</h2>
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h3 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Social Care case date range
+                </span>
+              </h3>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h3 class="govuk-fieldset__heading">
+                      Date from
+                    </h3>
+                  </legend>
+                  <div id="passport-issued-hint" class="govuk-hint">
+                    For example, 30 1 2023
+                  </div>
+                  <div class="govuk-date-input" id="passport-issued">
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label for="day-from" class="govuk-label govuk-date-input__label">Day</label>
+                        <input type="text" id="day-from" name="day-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
+                      </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label for="month-from" class="govuk-label govuk-date-input__label">Month</label>
+                        <input type="text" id="month-from" name="month-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
+                      </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label for="year-from" class="govuk-label govuk-date-input__label">Year</label>
+                        <input type="text" id="year-from" name="year-from" class="govuk-input govuk-date-input__input govuk-input--width-4" inputmode="numeric">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h3 class="govuk-fieldset__heading">
+                      Date to
+                    </h3>
+                  </legend>
+                  <div id="passport-issued-hint" class="govuk-hint">
+                    For example, 30 1 2023
+                  </div>
+                  <div class="govuk-date-input" id="passport-issued">
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="day-to">Day</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="day-to" name="day-to" type="text" inputmode="numeric">
+                      </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="month-to">Month</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="month-to" name="month-to" type="text" inputmode="numeric">
+                      </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="year-to">Year</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="year-to" name="year-to" type="text" inputmode="numeric">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <!--<div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h3 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Referral Source
+                </span>
+              </h3>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h3 class="govuk-fieldset__heading">
+                        Source
+                      </h3>
+                    </legend>
+                    <div class="govuk-date-input" id="passport-issued">
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="source">
+                            Source Name
+                          </label>
+                          <select class="govuk-select" name="source" id="source">
+                            <option value="1">All sources</option>
+                            <option value="2">A&E</option>
+                            <option value="3">Acquaintence</option>
+                            <option value="4">Anonymous</option>
+                            <option value="5">Education Services</option>
+                            <option value="6">External Local Authority</option>
+                            <option value="7">Family/Carer</option>
+                            <option value="8">GP</option>
+                            <option value="9">Health Visitor</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <!--END OF FILTERS-->
+
+      <!--TABS-->
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-tabs" data-module="govuk-tabs">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#ehcp-requests">
+              EHCP Requests
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#ehcp-assess-comp">
+              EHCP Assessments Completed
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#ehcp-issued">
+              EHCP Issued
+            </a>
+          </li>
+        </ul>
+        <!--inside tabs-->
+        <div class="govuk-tabs__panel" id="ehcp-requests">
+          <h2 class="mobile-only">EHCP Requests</h2>
+          <div class="govuk-grid-column-full">
+            <div class="greenbox">
+              <p>EHCP Requests: <strong>204</strong></p>
+            </div>
+          </div>
+          
+          <p><strong>EHCP requests by date</strong></p>
+          <img src="/public/images/ehcp-1.jpg" alt="Graph showing the demand from the last week" width="100%">
+        </div>
+
+        <div class="govuk-tabs__panel" id="ehcp-assess-comp">
+          <h2 class="mobile-only">EHCP Assessments Completed</h2>
+          <div class="govuk-grid-column-full">
+            <div class="greenbox">
+              <p>EHCP Assessments Completed: <strong>213</strong></p>
+            </div>
+          </div>
+          
+          <p><strong>Assessments completed by date</strong></p>
+          <img src="/public/images/ehcp-2.jpg" alt="Graph showing the demand from the last month" width="100%">
+        </div>
+
+        <div class="govuk-tabs__panel" id="ehcp-issued">
+          <h2 class="mobile-only">EHCP Issued</h2>
+          <div class="govuk-grid-column-full">
+            <div class="greenbox">
+              <p>EHCP Issued: <strong>203</strong></p>
+            </div>
+          </div>
+          
+          <p><strong>Plans issued by date</strong></p>
+          <img src="/public/images/ehcp-3.jpg" alt="Graph showing the demand from the last week" width="100%">
+        </div>
+      </div>
+    </div>
+    <!--END OF TABS-->
+  </main>
+</div>
+
+{% endblock %}

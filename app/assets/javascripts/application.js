@@ -22,9 +22,10 @@ $(window).resize(function() {
 }).resize(); 
 
 
-$('.govuk-header__container').append("<div class='header-links'><ul><li><a href='#' class='header-sign-out'>Sign out</a></li></ul>");
+$('.govuk-header__container').append("<div class='header-links'><p>Joe Bloggs</p><ul><li><a href='#' class='header-sign-out'>Sign out</a></li></ul>");
+
 
 $('.govuk-cookie-banner').insertBefore('.govuk-header');
-$('.app-navigation').insertAfter('.govuk-header ');
-$('.govuk-phase-banner').insertAfter('.app-navigation');
+$('#app-navigation').insertAfter('.govuk-header');
+$('.govuk-phase-banner').insertAfter('#app-navigation');
 $(".app-section").insertAfter(".govuk-phase-banner");

@@ -29,28 +29,30 @@ Analyse School Performance
   </div>
 </div> -->
 
-<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
-  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
-  <ul class="app-navigation__list app-width-container">
-    <li><a href="/index.html"><strong>Search</strong></a></li>
-    <li><a href="/key-stage-landing.html"><strong>Key Stage</strong></a></li>
-    <li><a href="#"><strong>Other Reports</strong></a></li>
-    <li><a href="#"><strong>Site News</strong></a></li>
-    <li><a href="#"><strong>Release Timetable</strong></a></li>
-    <li><a href="#"><strong>Guidance</strong></a></li>
-  </ul>
-</nav>
-
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content">
     <strong class="govuk-tag govuk-phase-banner__content__tag">
       Beta
     </strong>
     <span class="govuk-phase-banner__text">
-      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
     </span>
   </p>
 </div>
+
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li class="active"><a href="/index.html"><strong>Home</strong></a></li>
+    <li><a href="/search.html"><strong>Search</strong></a></li>
+    <!-- <li><a href="/index.html"><strong>My Local Authority</strong></a></li> -->
+    <li><a href="/my-school.html"><strong>My School</strong></a></li>
+    <li><a href="#"><strong>Download Data</strong></a></li>
+    <li><a href="#"><strong>Site News</strong></a></li>
+    <li><a href="#"><strong>Release Timetable</strong></a></li>
+    <li><a href="#"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
@@ -82,37 +84,73 @@ Analyse School Performance
         </div>
       </div>
 
-        <h2 id="search-page-heading" class="govuk-heading-l">Search for a school or a local authority</h2>
-        <div class="govuk-form-group">
-          <label for="schoolSearchTerm" class="govuk-label asp-search-label govuk-body-s">
-              Enter school name, URN (Unique Reference Number), LAESTAB (Local Authority Establishment Number), local authority name or code
-          </label>
+      <div class="dfe-grid-container">
+        <div class="dfe-card">
+          <picture>
+            <source srcset="/assets/images/imgdes.webp" type="image/webp">
+            <img src="/assets/images/imgdes.png" alt="">
+          </picture>
 
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="search.html">Search</a>
+            </h2>
+            <p>Search for a school or a local authority to see performance measures and other reports.</p>
+          </div>
+        </div>
 
-          <input class="govuk-input govuk-!-width-three-quarters asp-magnify-input " name="schoolSearchTerm" id="schoolSearchTerm" spellcheck="false">
-          <button id="schoolSearchSubmit" type="submit" class="govuk-button asp-magnify-button">
-              <span class="govuk-visually-hidden ">Search</span>
-          </button>
+        <div class="dfe-card">
+          <picture>
+            <source srcset="/assets/images/imgacc.webp" type="image/webp">
+            <img src="/assets/images/imgacc.png" alt="">
+          </picture>
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/accessibility">My School</a>
+            </h2>
+            <p>View your school by Key Stage. Look at graphs &amp; charts to see how well your school is performing</p>
+          </div>
+        </div>
+
+        <div class="dfe-card">
+          <picture>
+            <source srcset="/assets/images/imgcon.webp" type="image/webp">
+            <img src="/assets/images/imgcon.png" alt="">
+          </picture>
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/content-design">Site News</a>
+            </h2>
+            <p>See what's going on in Analyse School Performance and any planned upgrades to our service.</p>
+          </div>
+        </div>
+
+        <div class="dfe-card">
+          <picture>
+            <source srcset="/assets/images/imgcop.webp" type="image/webp">
+            <img src="/assets/images/imgcop.png" alt="">
+          </picture>
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/professions">Release Timetable</a>
+            </h2>
+            <p>Find out when your data will be released in our timetable.</p>
+          </div>
+        </div>
+
+      </div>
 
       <details class="govuk-details" data-module="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text govuk-body-s">
-            Is there anything wrong with this page?expand to access the feedback form
+            Help us improve Analyse School Performance
           </span>
         </summary>
         <div class="govuk-details__text">
-          <div id="feedback-form-component">                
-            <div class="govuk-fieldset__legend">
-                <h2 class="govuk-heading-m">
-                    Help us improve Analyse school performance
-                </h2>
-            </div>
-
             <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
             <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
             <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
             <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
-        </div>
         </div>
       </details>
 

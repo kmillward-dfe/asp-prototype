@@ -22,19 +22,54 @@ $govuk-assets-path: '/govuk/assets/';
     right: 0;
     top: 12px;
     z-index: 999999;
+    p {
+        color: #ffffff;
+        display: inline-block;
+        margin: 0;
+        font-size: 16px;
+    }
     ul {
         list-style: none;
         margin: 0;
+        display: inline-block;
+        padding: 0 0 0 10px;
         li {
             display: inline-block;
             padding: 0 5px;
             .header-sign-out {
                 color: #ffffff!important;
+                font-size: 16px;
             }
         }
     }
 }
 
+.govuk-form-group.search {
+    p {
+        margin: 20px 0;
+    }
+}
+.asp-search-label {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.asp-magnify-input {
+    width: 400px!important;
+}
+.asp-magnify-button {
+    width: 10%;
+    margin: 0 0 0 -5px;
+    padding: 0;
+    background-image: url(/public/images/inline-search-button-icon.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 14px 10px;
+    min-height: 38px;
+    min-width: 42px;
+    max-width: 46px
+}
+    
+.govuk-details__summary-text {color: #1d70b8;}
 .govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
     padding-top: 20px;
 }
@@ -204,6 +239,103 @@ h1 {
     }
 }
 
+.sub-navigation {
+    margin-bottom: govuk-spacing(7);
+}
+  .sub-navigation__list {
+    font-size: 0; // Removes white space when using inline-block on child element.
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include govuk-media-query($from: tablet) {
+      box-shadow: inset 0 -1px 0 $govuk-border-colour;
+      width: 100%;
+    }
+    // IE8 does not support box shadow, so use a standard border.
+    @include govuk-if-ie8 {
+      border-bottom: 1px solid $govuk-border-colour;
+    }
+  } 
+  .sub-navigation__item {
+    @include govuk-font(19);
+    box-shadow: inset 0 -1px 0 $govuk-border-colour;
+    display: block;
+    margin-top: -1px;
+    &:last-child {
+      box-shadow: none;
+    }
+    @include govuk-media-query($from: tablet) {
+      box-shadow: none;
+      display: inline-block;
+      margin-right: govuk-spacing(4);
+      margin-top: 0;
+    }
+  }
+  
+  .sub-navigation__link {
+    @include govuk-link-common;
+    @include govuk-link-style-default;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: govuk-spacing(3);
+    text-decoration: none;
+    position: relative;
+    @include govuk-media-query($from: tablet) {
+      padding-left: 0;
+    }
+    &:link,
+    &:visited {
+      color: $govuk-link-colour;
+    }
+    &:hover {
+      color: govuk-tint($govuk-link-colour, 25);
+    }
+    &:focus {
+      color: govuk-colour("black"); // Focus colour on yellow should really be black.
+      position: relative; // Ensure focus sits above everything else.
+      box-shadow: none;
+    }
+    &:focus:before {
+      background-color: govuk-colour("black");
+      content: "";
+      display: block;
+      width: 100%;
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 5px;
+    }
+  }
+  
+  .sub-navigation__link[aria-current="page"] {
+    color: $govuk-link-active-colour;
+    position: relative;
+    text-decoration: none;
+    &:before {
+      background-color: $govuk-link-colour;
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute; bottom: 0; left: 0;
+      width: 5px;
+      @include govuk-media-query($from: tablet) {
+        height: 5px;
+        width: 100%;
+      }
+    }
+    &:focus:before {
+      background-color: govuk-colour("black");
+    }
+  }  
+//end of navigation
+
+.govuk-breadcrumbs {
+    margin-bottom: 20px;
+}
+
+.govuk-heading-xl {
+    margin-bottom: 20px;
+}
+
 .greybox {
     background: #f4f4f4;
     border-bottom: 5px solid #1d70b8;
@@ -270,20 +402,217 @@ h1 {
 .js-enabled .govuk-tabs__panel {
     padding: 30px 0px;
 }
-.latest-activity {
+
+.main-asp {
+    padding-top: 0;
     .govuk-grid-column-one-third {
-        width: 25%;
+        width: 22%;
+        /* ==========================================================================
+        #SIDE NAVIGATION
+        ========================================================================== */
+        .side-navigation {
+            @include govuk-font(16);
+            @include govuk-media-query($until: tablet) {
+            display: flex;
+            overflow-x: scroll;
+            }
+            @include govuk-media-query($from: tablet) {
+            display: block;
+            //padding: govuk-spacing(4) 0 0;
+            }
+            ul {
+                margin-top: 0;
+            }
+        }
+        .side-navigation__title {
+            @include govuk-font($size: 19);
+            color: govuk-colour("dark-grey");
+            font-weight: normal;
+            margin: 0;
+            padding: govuk-spacing(2);
+            padding-left: govuk-spacing(2) + 4px;
+            @include govuk-media-query($until: tablet) {
+            display: none;
+            }
+        }
+        .side-navigation__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            @include govuk-media-query($until: tablet) {
+            display: flex;
+            margin: 0;
+            white-space: nowrap;
+            }
+            @include govuk-media-query($from: tablet) {
+            margin-bottom: govuk-spacing(4);
+            }
+        }
+        .side-navigation__item {
+            @include govuk-media-query($until: tablet) {
+            display: flex;
+            }
+            a,
+            a:link,
+            a:visited {
+            background-color: inherit;
+            color: $govuk-link-colour;
+            display: block;
+            text-decoration: none;
+            @include govuk-media-query($until: tablet) {
+                border-bottom: 4px solid transparent;
+                padding: govuk-spacing(3);
+                padding-bottom: govuk-spacing(3) - 4px; // Compensate for 4px border
+            }
+            @include govuk-media-query($from: tablet) {
+                background-color: inherit;
+                border-left: 4px solid transparent;
+                padding: govuk-spacing(2);
+            }
+            }
+            a:hover {
+            border-color: govuk-tint($govuk-link-colour, 25);
+            }
+            a:focus {
+            color: $govuk-focus-text-colour;
+            background-color: $govuk-focus-colour;
+            box-shadow: 0 -2px $govuk-focus-colour, 0 4px $govuk-focus-text-colour;
+            border-color: $govuk-focus-text-colour;
+            border-left-color: transparent;
+            position: relative;
+            }
+        }
+        .side-navigation__item--active {
+            a:link,
+            a:visited {
+            border-color: $govuk-link-colour;
+            color: $govuk-link-colour;
+            font-weight: bold;
+            }
+            a:focus {
+            color: $govuk-focus-text-colour;
+            background-color: $govuk-focus-colour;
+            box-shadow: 0 -2px $govuk-focus-colour, 0 4px $govuk-focus-text-colour;
+            border-color: $govuk-focus-text-colour;
+            border-left-color: transparent;
+            }
+            @include govuk-media-query($from: tablet) {
+            a:link,
+            a:visited {
+                background-color: govuk-colour("light-grey");
+            }
+            a:focus {
+                color: $govuk-focus-text-colour;
+                background-color: $govuk-focus-colour;
+                border-color: transparent;
+            }
+            }
+        }
     }
     .govuk-grid-column-two-thirds {
-        width: 75%
+        width: 78%;
+        #school-name-heading {
+            span {
+                font-size: 22px;
+                font-weight: normal;
+            }
+        }
     }
-    .govuk-grid-column-one-half, .govuk-grid-column-full {
-        padding: 0 5px;
+} 
+
+
+.dfe-grid-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 40.0625em) {
+    .dfe-grid-container {
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        grid-gap: 30px
     }
-    a:visited {
-        color: #1d70b8;
+
+    .dfe-grid-container.dfe-grid-container--wider {
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr))
     }
 }
+
+.dfe-card {
+    position: relative;
+    background-color: #f8f8f8;
+    border-bottom: 3px solid #1f70b8;
+    max-width: 400px
+}
+
+.dfe-card.dfe-card--blog-card {
+    border-radius: 12px 12px 0 0
+}
+
+.dfe-card.dfe-card--blog-card img {
+    border-radius: 12px 12px 0 0
+}
+
+@media (max-width: 40.0525em) {
+    .dfe-card {
+        max-width:100%
+    }
+}
+
+.dfe-card>picture,.dfe-card>picture>img {
+    max-width: 100%
+}
+
+.dfe-card-container {
+    padding: 20px;
+    h2 {
+        margin: 0 0 20px 0;
+        a {
+            font-size: 22px;
+        }
+        
+    }
+}
+
+.dfe-card:focus-within,.dfe-card:hover {
+    background-color: #003a69
+}
+
+.dfe-card:focus-within a,.dfe-card:focus-within p,.dfe-card:hover a,.dfe-card:hover p {
+    color: #fff
+}
+
+.dfe-card:focus-within {
+    outline: 3px solid #fd0
+}
+
+.dfe-card-container .dfe-card-link--header:focus,.dfe-card-container .dfe-card-link--retake:focus {
+    color: #0b0c0c
+}
+
+.dfe-card-link--retake {
+    position: relative;
+    z-index: 2
+}
+
+.dfe-card-link--header {
+    text-decoration: none;
+    color: #347ca9
+}
+
+.dfe-card-link--header:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+
+
 .app-section {
     background: #1d70b8;
     border-bottom: 5px solid #0E385C;
@@ -408,8 +737,8 @@ ul.links-list a {
 .landing-grid {
     display: grid;
     grid-auto-flow: row;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 0;
@@ -424,17 +753,14 @@ ul.links-list a {
         display: flex;
         .chevron-card__wrapper {
             position: relative;
-            background: #1f70b8;
-            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 3px solid #1f70b8;
+            padding: 40px 20px;
             min-height: 75px;
             display: grid;
             text-decoration: none;
-            border-bottom: 5px solid #0E385C;
-            box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
-            -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
-            -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
             width: 100%;
-            text-align: center;
+            text-align: left;
             &:focus {
                 outline: 3px solid transparent;
                 color: #0b0c0c!important;
@@ -452,13 +778,14 @@ ul.links-list a {
                 flex-direction: column;
                 justify-content: center;
                 p {
-                    color: #ffffff;
                     margin: 0;
                     &.header {
                         font-size: 24px;
+                        color: #1f70b8;
                     }
                     &.intro-text {
                         margin-bottom: 0;
+                        color: #0b0c0c;
                     }
                 }
                

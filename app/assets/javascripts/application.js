@@ -62,4 +62,7 @@ $(document).ready(function () {
   if (window.location.href.indexOf("other-reports") != -1){ 
     $('#app-navigation li:nth-child(3)').addClass('active');
   }
+  if (window.location.href.indexOf("useful-links") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
 })

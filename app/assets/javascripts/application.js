@@ -31,33 +31,35 @@ $(window).resize(function() {
 $(".app-section").insertAfter(".govuk-phase-banner");
 
 //add active classes to urls
-if (window.location.href.indexOf("index") != -1){ 
-  $('#app-navigation li:nth-child(1)').addClass('active');
-}
-if (window.location.href.indexOf("search") != -1){ 
-  $('#app-navigation li:nth-child(2)').addClass('active');
-}
-if (window.location.href.indexOf("my-school") != -1){ 
-  $('#app-navigation li:nth-child(3)').addClass('active');
-}
-if (window.location.href.indexOf("key-stage-1") != -1){ 
-  $('#app-navigation li:nth-child(3)').addClass('active');
-}
-if (window.location.href.indexOf("key-stage-2") != -1){ 
-  $('#app-navigation li:nth-child(3)').addClass('active');
-}
-if (window.location.href.indexOf("key-stage-4") != -1){ 
-  $('#app-navigation li:nth-child(3)').addClass('active');
-}
-if (window.location.href.indexOf("phonics") != -1){ 
-  $('#app-navigation li:nth-child(3)').addClass('active');
-}
-if (window.location.href.indexOf("mtc") != -1){ 
-  $('#app-navigation li:nth-child(3)').addClass('active');
-}
-if (window.location.href.indexOf("qla") != -1){ 
-  $('#app-navigation li:nth-child(3)').addClass('active');
-}
-if (window.location.href.indexOf("other-reports") != -1){ 
-  $('#app-navigation li:nth-child(3)').addClass('active');
-}
+$(document).ready(function () {
+  if (window.location.href.indexOf("index") != -1){ 
+    $('#app-navigation li:nth-child(1)').addClass('active');
+  }
+  if (window.location.href.indexOf("search") != -1){ 
+    $('#app-navigation li:nth-child(2)').addClass('active');
+  }
+  if (window.location.href.indexOf("my-school") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
+  if (window.location.href.indexOf("key-stage-1") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
+  if (window.location.href.indexOf("key-stage-2") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
+  if (window.location.href.indexOf("key-stage-4") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
+  if (window.location.href.indexOf("phonics") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
+  if (window.location.href.indexOf("mtc") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
+  if (window.location.href.indexOf("qla") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
+  if (window.location.href.indexOf("other-reports") != -1){ 
+    $('#app-navigation li:nth-child(3)').addClass('active');
+  }
+})

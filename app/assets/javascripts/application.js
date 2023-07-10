@@ -65,4 +65,10 @@ $(document).ready(function () {
   if (window.location.href.indexOf("useful-links") != -1){ 
     $('#app-navigation li:nth-child(3)').addClass('active');
   }
+  if (window.location.href.indexOf("release-timetable") != -1){ 
+    $('#app-navigation li:nth-child(6)').addClass('active');
+  }
+  if (window.location.href.indexOf("guidance") != -1){ 
+    $('#app-navigation li:nth-child(7)').addClass('active');
+  }
 })

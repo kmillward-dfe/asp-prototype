@@ -1,0 +1,563 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+ASP - MTC
+{% endblock %}
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+   <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+   <ul class="app-navigation__list app-width-container">
+      <li><a href="home.html"><strong>Home</strong></a></li>
+      <li class="active"><a href="my-school.html"><strong>My school</strong></a></li>
+      <li><a href="search.html"><strong>Search</strong></a></li>
+      <li><a href="#"><strong>Download data</strong></a></li>
+      <li><a href="#"><strong>Site news</strong></a></li>
+      <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
+      <li><a href="guidance.html"><strong>Guidance</strong></a></li>
+   </ul>
+</nav>
+
+<div class="govuk-phase-banner">
+   <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+      </span>
+   </p>
+</div>
+
+<div class="govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="my-school.html">My school</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Multiplication table check
+      </li>
+   </ol>
+</div>
+
+<h1 class="govuk-heading-xl">Multiplication table check</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">Primary school name <span class="urn">(URN: 000000)</span></h2>
+
+<nav class="sub-navigation" aria-label="Sub navigation">
+   <ul class="sub-navigation__list">
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="phonics.html">Phonics</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="key-stage-1.html">Key stage 1</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" aria-current="page" href="mtc.html"><strong>Multiplication table check</strong></a>
+      </li>
+      <li class="sub-navigation__item">
+        <a class="sub-navigation__link" href="key-stage-2.html">Key stage 2</a>
+     </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="other-reports.html">Other reports</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="useful-links.html">Useful links</a>
+      </li>
+   </ul>
+</nav>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper main-asp">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third side-nav">
+          <nav class="side-navigation" aria-label="Side navigation">
+              <ul class="side-navigation__list">
+                <li class="side-navigation__item side-navigation__item--active">
+                    <a href="#1" aria-current="location">Performance Measures</a>
+                </li>
+                <li class="side-navigation__item">
+                    <a href="#2">Reading</a>
+                </li>
+                <li class="side-navigation__item">
+                    <a href="#3">Writing</a>
+                </li>
+                <li class="side-navigation__item">
+                    <a href="#3">Maths</a>
+                </li>
+                <li class="side-navigation__item">
+                    <a href="#3">Science</a>
+                </li>
+                <li class="side-navigation__item">
+                    <a href="#3">Pupil List</a>
+                </li>
+              </ul>
+          </nav>
+        </div>
+        <!--TABS-->
+        <div class="govuk-grid-column-two-thirds">
+          <div class="page-content js-content-target">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <h2 class="govuk-heading-l">Performance Measures</h2>
+              </div>
+              <div class="govuk-grid-column-one-half download-to-pdf">
+                <button class="govuk-button" data-module="govuk-button">
+                  Download PDF to print or save
+                </button>
+              </div>
+            </div>
+
+
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                  
+                    <div class="data-message-container">
+                      <p>This is provisional data for 2021/22.</p>
+                    </div>
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving the expected standard or higher in reading
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-reading-exp-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="286.7272727272727" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="245.2272727272727" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="252.77272727272725" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="294.7272727272727" y="16">76%</text>
+                                <text class="value-label" x="253.2272727272727" y="40">65%</text>
+                                <text class="value-label" x="260.77272727272725" y="64">67%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the expected standard or higher in reading</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-reading-exp-std-table-link">View as table</button>    
+                      <table class="ks1-reading-exp-std-data asp-chart-table govuk-table u-printHidden" id="ks1-reading-exp-std-table" aria-hidden="true" style="position: relative;display:none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving the expected standard or higher in reading data for Shotton Hall Primary School</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving the expected standard or higher in reading</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">76%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">65%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">67%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-reading-hi-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving greater depth in reading
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-greater-depth" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-reading-hi-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="116.95454545454545" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="60.36363636363636" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="67.90909090909089" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="124.95454545454545" y="16">31%</text>
+                                <text class="value-label" x="68.36363636363636" y="40">16%</text>
+                                <text class="value-label" x="75.90909090909089" y="64">18%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving greater depth in reading</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>    
+                      <table class="ks1-reading-hi-std-data asp-chart-table govuk-table u-printHidden" id="ks1-reading-hi-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-reading-achieving-greater-depth" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving greater depth in reading" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving greater depth in reading data for Shotton Hall Primary School</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving greater depth in reading</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">31%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">16%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">18%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-writing-exp-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving the expected standard or higher in writing
+                          <a class="icon-more-info-help " href="#help-ks1-writing-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-writing-exp-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="237.68181818181816" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="218.8181818181818" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="218.8181818181818" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="245.68181818181816" y="16">63%</text>
+                                <text class="value-label" x="226.8181818181818" y="40">58%</text>
+                                <text class="value-label" x="226.8181818181818" y="64">58%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the expected standard or higher in writing</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-writing-exp-std-table-link">View as table</button>
+                      <table class="ks1-writing-exp-std-data asp-chart-table govuk-table u-printHidden" id="ks1-writing-exp-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-writing-achieving-expected-standard" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving the expected standard or higher in writing" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving the expected standard or higher in writing data for Shotton Hall Primary School</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving the expected standard or higher in writing</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">63%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">58%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">58%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-writing-hi-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving greater depth in writing
+                          <a class="icon-more-info-help " href="#help-ks1-writing-achieving-greater-depth" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-writing-hi-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="60.36363636363636" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="26.409090909090907" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="30.18181818181818" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="68.36363636363636" y="16">16%</text>
+                                <text class="value-label" x="34.40909090909091" y="40">7%</text>
+                                <text class="value-label" x="38.18181818181818" y="64">8%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving greater depth in writing</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-writing-hi-std-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>    
+                      <table class="ks1-writing-hi-std-data asp-chart-table govuk-table u-printHidden" id="ks1-writing-hi-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-writing-achieving-greater-depth" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving greater depth in writing" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving greater depth in writing data for Shotton Hall Primary School</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving greater depth in writing</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">16%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">7%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">8%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-maths-exp-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving the expected standard or higher in maths
+                          <a class="icon-more-info-help " href="#help-ks1-maths-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-maths-exp-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="301.81818181818176" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="252.77272727272725" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="256.5454545454545" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="309.81818181818176" y="16">80%</text>
+                                <text class="value-label" x="260.77272727272725" y="40">67%</text>
+                                <text class="value-label" x="264.5454545454545" y="64">68%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the expected standard or higher in maths</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-maths-exp-std-table-link">View as table</button>
+                      <table class="ks1-maths-exp-std-data asp-chart-table govuk-table u-printHidden" id="ks1-maths-exp-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-maths-achieving-expected-standard" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving the expected standard or higher in maths" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving the expected standard or higher in maths data for Shotton Hall Primary School</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving the expected standard or higher in maths</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">80%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">67%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">68%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-maths-hi-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving greater depth in maths
+                          <a class="icon-more-info-help " href="#help-ks1-maths-achieving-greater-depth" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-maths-hi-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="139.59090909090907" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="49.04545454545454" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="56.590909090909086" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="147.59090909090907" y="16">37%</text>
+                                <text class="value-label" x="57.04545454545454" y="40">13%</text>
+                                <text class="value-label" x="64.5909090909091" y="64">15%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving greater depth in maths</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-maths-hi-std-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>    
+                      <table class="ks1-maths-hi-std-data asp-chart-table govuk-table u-printHidden" id="ks1-maths-hi-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-maths-achieving-greater-depth" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving greater depth in maths" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving greater depth in maths data for Shotton Hall Primary School</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving greater depth in maths</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">37%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">13%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">15%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!--END OF TABS-->
+      </div>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text govuk-body-s">
+            Help us improve Analyse School Performance
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+        </div>
+      </details>
+  </main>
+</div>
+{% endblock %}

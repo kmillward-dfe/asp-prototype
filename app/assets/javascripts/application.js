@@ -21,54 +21,77 @@ $(window).resize(function() {
   }
 }).resize(); 
 
-
-// $('.govuk-header__container').append("<div class='header-links'><p>Joe Bloggs</p><ul><li><a href='#' class='header-sign-out'>Sign out</a></li></ul>");
-
-
-// $('.govuk-cookie-banner').insertBefore('.govuk-header');
-// $('#app-navigation').insertAfter('.govuk-header');
-// $('.govuk-phase-banner').insertAfter('#app-navigation');
+$('.govuk-phase-banner').insertAfter('#app-navigation');
 $(".app-section").insertAfter(".govuk-phase-banner");
 
+$("#ks1-reading-exp-std-table-link").click(function(){
+  $("#ks1-reading-exp-std-table").slideToggle("fast");
+});
+
+$("#ks1-reading-hi-std-table-link").click(function(){
+  $("#ks1-reading-hi-std-table").slideToggle("fast");
+});
+
+$("#ks1-writing-exp-std-table-link").click(function(){
+  $("#ks1-writing-exp-std-table").slideToggle("fast");
+});
+
+$("#ks1-writing-hi-std-table-link").click(function(){
+  $("#ks1-writing-hi-std-table").slideToggle("fast");
+});
+
+$("#ks1-maths-exp-std-table-link").click(function(){
+  $("#ks1-maths-exp-std-table").slideToggle("fast");
+});
+
+$("#ks1-maths-hi-std-table-link").click(function(){
+  $("#ks1-maths-hi-std-table").slideToggle("fast");
+});
+
+
+
+// $('.govuk-header__container').append("<div class='header-links'><p>Joe Bloggs</p><ul><li><a href='#' class='header-sign-out'>Sign out</a></li></ul>");
+// $('.govuk-cookie-banner').insertBefore('.govuk-header');
+// $('#app-navigation').insertAfter('.govuk-header');
 //add active classes to urls
-$(document).ready(function () {
-  if (window.location.href.indexOf("index") != -1){ 
-    $('#app-navigation li:nth-child(1)').addClass('active');
-  }
-  if (window.location.href.indexOf("search") != -1){ 
-    $('#app-navigation li:nth-child(2)').addClass('active');
-  }
-  if (window.location.href.indexOf("my-school") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("key-stage-1") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("key-stage-2") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("key-stage-4") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("phonics") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("mtc") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("qla") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("other-reports") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("useful-links") != -1){ 
-    $('#app-navigation li:nth-child(3)').addClass('active');
-  }
-  if (window.location.href.indexOf("release-timetable") != -1){ 
-    $('#app-navigation li:nth-child(6)').addClass('active');
-  }
-  if (window.location.href.indexOf("guidance") != -1){ 
-    $('#app-navigation li:nth-child(7)').addClass('active');
-  }
-})
+// $(document).ready(function () {
+//   if (window.location.href.indexOf("index") != -1){ 
+//     $('#app-navigation li:nth-child(1)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("search") != -1){ 
+//     $('#app-navigation li:nth-child(2)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("my-school") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("key-stage-1") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("key-stage-2") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("key-stage-4") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("phonics") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("mtc") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("qla") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("other-reports") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("useful-links") != -1){ 
+//     $('#app-navigation li:nth-child(3)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("release-timetable") != -1){ 
+//     $('#app-navigation li:nth-child(6)').addClass('active');
+//   }
+//   if (window.location.href.indexOf("guidance") != -1){ 
+//     $('#app-navigation li:nth-child(7)').addClass('active');
+//   }
+// })

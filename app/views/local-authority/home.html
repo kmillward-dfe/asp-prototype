@@ -1,0 +1,118 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Analyse School Performance
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li class="active"><a href="home.html"><strong>Home</strong></a></li>
+    <!-- <li><a href="my-school.html"><strong>My school</strong></a></li> -->
+    <li><a href="my-la.html"><strong>My local authority</strong></a></li>
+    <li><a href="search.html"><strong>Search</strong></a></li>
+    <li><a href="#"><strong>Download data</strong></a></li>
+    <li><a href="#"><strong>Site news</strong></a></li>
+    <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
+    <li><a href="guidance.html"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+    </span>
+  </p>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+  <section class="app-section">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Analyse School Performance</h1>
+          <p class="govuk-body-l" id="subheadinghomepage">Intro text about what the service provides goes here. Intro text about what the service provides goes here. Intro text about what the service provides goes here. Intro text about what the service provides goes here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="landing-intro">
+      <div class="govuk-notification-banner" role="region"
+        aria-labelledby="govuk-notification-banner-title"
+        data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            Use 2021/22 school performance data with caution<br/><br/>
+            LA boundary change
+          </p>
+        </div>
+      </div>
+
+      <div class="dfe-grid-container">
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="search.html">Search</a>
+            </h2>
+            <p>Search for a school or a local authority to see performance measures and other reports.</p>
+          </div>
+        </div>
+
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="my-school.html">My local authority</a>
+            </h2>
+            <p>View your schools by key stage. Look at graphs &amp; charts to see how well your schools are performing</p>
+          </div>
+        </div>
+
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">Site news</a>
+            </h2>
+            <p>See what's going on in Analyse School Performance and any planned upgrades to our service.</p>
+          </div>
+        </div>
+
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">Release timetable</a>
+            </h2>
+            <p>Find out when your data will be released in our timetable.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text govuk-body-s">
+            Help us improve Analyse School Performance
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+        </div>
+      </details>
+
+  </div>
+</div>
+
+{% endblock %}

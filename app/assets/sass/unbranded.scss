@@ -12,5 +12,26 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 
 // Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
 $govuk-canvas-background-colour: $govuk-body-background-colour;
+* {
+    font-family: "GDS Transport", arial, sans-serif;
+}
+.govuk-template {
+    overflow-y: auto!important;
+}
+.dfe-card {
+    max-width: 100%!important;
+    display: flex!important;
+    align-items: center!important;
+    height: 100px!important;
+}
+p, ul li, h1, h2, a {
+    font-family: "GDS Transport", arial, sans-serif!important;
+}
+h1 {
+    margin-bottom: 30px!important;
+}
 
+.dfe-card-container h2 {
+    margin: 0!important;
+}
 @import "application";

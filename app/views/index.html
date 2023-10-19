@@ -1,95 +1,119 @@
 
-{% extends "layout.html" %}
+{% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
 Analyse School Performance
 {% endblock %}
 
-{% block content %}
+{% block content %}    
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-  <section class="app-section">
-    <div class="govuk-width-container">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full">
-          <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Analyse School Performance</h1>
-          <p class="govuk-body-l" id="subheadinghomepage">Intro text about what the service provides goes here. Intro text about what the service provides goes here. Intro text about what the service provides goes here. Intro text about what the service provides goes here.</p>
-        </div>
+    <h1 class="govuk-heading-xl">ASP 2.0 prototypes</h1>
+
+    <div class="govuk-notification-banner" role="region"
+      aria-labelledby="govuk-notification-banner-title"
+      data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Important
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+          Please be aware of the following:</p>
+          <ul>
+            <li>The data used within this prototype is dummy data.</li>
+            <li>As this is a prototype:
+              <ul>
+                <li>some links may not work as expected</li>
+                <li>some features may not be interactive and there may be use of screenshots of graphs/charts to show examples</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
       </div>
     </div>
-  </section>
 
-    <div class="landing-intro">
-      <div class="govuk-notification-banner" role="region"
-        aria-labelledby="govuk-notification-banner-title"
-        data-module="govuk-notification-banner">
-        <div class="govuk-notification-banner__header">
-          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-            Important
+    <h2 class="govuk-heading-m">Choose a user type:</h2>
+    <div class="dfe-grid-container">
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="primary-school/home.html">Primary school</a>
           </h2>
         </div>
-        <div class="govuk-notification-banner__content">
-          <p class="govuk-notification-banner__heading">
-            Use 2021/22 school performance data with caution<br/><br/>
-            LA boundary change
-          </p>
+      </div>
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="secondary-school/home.html">Secondary school</a>
+          </h2>
         </div>
       </div>
-
-      <div class="dfe-grid-container">
-        <div class="dfe-card">
-          <div class="dfe-card-container">
-            <h2>
-              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="search.html">Search</a>
-            </h2>
-            <p>Search for a school or a local authority to see performance measures and other reports.</p>
-          </div>
+      <!-- <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="all-through-school/home.html">All-through school</a>
+          </h2>
         </div>
-
-        <div class="dfe-card">
-          <div class="dfe-card-container">
-            <h2>
-              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="my-school.html">My school</a>
-            </h2>
-            <p>View your school by key stage. Look at graphs &amp; charts to see how well your school is performing</p>
-          </div>
-        </div>
-
-        <div class="dfe-card">
-          <div class="dfe-card-container">
-            <h2>
-              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">Site news</a>
-            </h2>
-            <p>See what's going on in Analyse School Performance and any planned upgrades to our service.</p>
-          </div>
-        </div>
-
-        <div class="dfe-card">
-          <div class="dfe-card-container">
-            <h2>
-              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">Release timetable</a>
-            </h2>
-            <p>Find out when your data will be released in our timetable.</p>
-          </div>
-        </div>
-
       </div>
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text govuk-body-s">
-            Help us improve Analyse School Performance
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
-            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
-            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
-            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="mat/home.html">Multi academy trust</a>
+          </h2>
         </div>
-      </details>
-
+      </div> -->
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="local-authority/home.html">Local authority</a>
+          </h2>
+        </div>
+      </div>
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="school-governer/home.html">School governor</a>
+          </h2>
+        </div>
+      </div>
+      <!-- <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="diocese/home.html">Diocese</a>
+          </h2>
+        </div>
+      </div>
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="system-admin/home.html">System admin</a>
+          </h2>
+        </div>
+      </div>
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="ofsted/home.html">Ofsted</a>
+          </h2>
+        </div>
+      </div>
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="dfe/home.html">DfE</a>
+          </h2>
+        </div>
+      </div>
+      <div class="dfe-card">
+        <div class="dfe-card-container">
+          <h2>
+            <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="training-provider/home.html">Training provider</a>
+          </h2>
+        </div>
+      </div> -->
+    </div>
   </div>
 </div>
-
 {% endblock %}

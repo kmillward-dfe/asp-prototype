@@ -69,169 +69,148 @@ ASP - Other reports
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper main-asp">
-    <div class="govuk-grid-row">
-        <!--TABS-->
-        <div class="govuk-grid-column-column-full">
-          <div class="page-content js-content-target">
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-one-half">
-                <h2 class="govuk-heading-l">Other reports</h2>
+     <!--TABS-->
+     <div class="page-content js-content-target">
+        <div class="govuk-accordion" data-module="govuk-accordion">
+           <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                 <h2 class="govuk-accordion__section-heading">
+                    <button type="button" id="inspection-data-summary" aria-controls="null-content-1" class="govuk-accordion__section-button" aria-expanded="false">Ofsted inspection data summary reports<span class="govuk-accordion__icon" aria-hidden="true"></span></button>
+                 </h2>
               </div>
-              <div class="govuk-grid-column-one-half download-to-pdf">
-                <button class="govuk-button" data-module="govuk-button">
-                  Download PDF to print or save
-                </button>
+              <div class="govuk-accordion__section-content" id="inspection-data-summary-panel" aria-describedby="inspection-data-summary">
+                 <p class="icon-idsr govuk-body-s">
+                    For the latest IDSR,
+                    <a target="_blank" class="govuk-link" href="#">
+                    visit the Ofsted IDSR service
+                    </a>
+                 </p>
+                 <p class="govuk-body-s govuk-!-padding-right-9 govuk-!-padding-top-4 govuk-!-margin-right-9">
+                    Problem with an IDSR? If you have an issue downloading an IDSR or any questions about the data in an IDSR, please email the relevant Ofsted team stating your URN or LAESTAB and give as much detail as possible:
+                    <br>
+                    <br>
+                    Schools - <a href="#" class="govuk-link">School.Performance.Data@ofsted.gov.uk</a>
+                    <br>
+                    <br>
+                    16 to 19 - <a href="#" class="govuk-link">FEandSkillsData@ofsted.gov.uk</a>
+                 </p>
               </div>
-            </div>
-
-
-              <div class="govuk-grid-row">
-                <div class="govuk-grid-column-full">
-                  
-                  <div class="govuk-accordion" data-module="govuk-accordion">
-                    <div class="govuk-accordion__section">
-                       <div class="govuk-accordion__section-header">
-                          <h2 class="govuk-accordion__section-heading">
-                             <button type="button" id="inspection-data-summary" aria-controls="null-content-1" class="govuk-accordion__section-button" aria-expanded="false">Ofsted inspection data summary reports<span class="govuk-accordion__icon" aria-hidden="true"></span></button>
-                          </h2>
-                       </div>
-                       <div class="govuk-accordion__section-content" id="inspection-data-summary-panel" aria-describedby="inspection-data-summary">
-                          <p class="icon-idsr govuk-body-s">
-                             For the latest IDSR,
-                             <a target="_blank" class="govuk-link" href="#">
-                             visit the Ofsted IDSR service
-                             </a>
-                          </p>
-                          <p class="govuk-body-s govuk-!-padding-right-9 govuk-!-padding-top-4 govuk-!-margin-right-9">
-                             Problem with an IDSR? If you have an issue downloading an IDSR or any questions about the data in an IDSR, please email the relevant Ofsted team stating your URN or LAESTAB and give as much detail as possible:
-                             <br>
-                             <br>
-                             Schools - <a href="#" class="govuk-link">School.Performance.Data@ofsted.gov.uk</a>
-                             <br>
-                             <br>
-                             16 to 19 - <a href="#" class="govuk-link">FEandSkillsData@ofsted.gov.uk</a>
-                          </p>
-                       </div>
-                    </div>
-                    <div class="govuk-accordion__section">
-                       <div class="govuk-accordion__section-header">
-                          <h2 class="govuk-accordion__section-heading">
-                             <button type="button" id="accordion-summary-reports" aria-controls="null-content-2" class="govuk-accordion__section-button" aria-expanded="false">School performance summary<span class="govuk-accordion__icon" aria-hidden="true"></span></button>
-                          </h2>
-                       </div>
-                       <div class="govuk-accordion__section-content" id="summary-report-panel" aria-describedby="accordion-summary-reports">
-                          <ul class="govuk-list">
-                             <li>
-                                <a class="report-link govuk-link" href="#">School performance summary for 2022/2023</a>
-                             </li>
-                             <li>
-                                <a class="report-link govuk-link" href="#">School performance summary for 2021/2022</a>
-                             </li>
-                             <li>
-                                <a class="report-link govuk-link" href="#">School performance summary for 2020/2021</a>
-                             </li>
-                             <li>
-                                <a class="report-link govuk-link" href="#">School performance summary for 2018/2019</a>
-                             </li>
-                             <li>
-                                <a class="report-link govuk-link" href="#">School performance summary for 2017/2018</a>
-                             </li>
-                             <li>
-                                <a class="report-link govuk-link" href="#">School performance summary for 2016/2017</a>
-                             </li>
-                             <li>
-                                <a class="report-link govuk-link" href="#">School performance summary for 2015/2016</a>
-                             </li>
-                          </ul>
-                       </div>
-                    </div>
-                    <div class="govuk-accordion__section">
-                       <div class="govuk-accordion__section-content" id="ks2-measures-panel" aria-describedby="ks2-heading">
-                          <ul class="govuk-list">
-                             <li>
-                                <a id="headline-measures-link_Ks2" href="#" class="dont-print report-link govuk-link">Headline measures</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print report-link govuk-link">Reading</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print report-link govuk-link">Writing</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print report-link govuk-link">Maths</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print report-link govuk-link">Reading, writing and maths combined</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print chart-link govuk-link">Progress scatter plot</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print chart-link govuk-link">Attainment scatter plot</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print report-link govuk-link">EGPS</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print report-link govuk-link">Science</a>
-                             </li>
-                          </ul>
-                       </div>
-                    </div>
-                    <div class="govuk-accordion__section">
-                       <div class="govuk-accordion__section-header">
-                          <h2 class="govuk-accordion__section-heading">
-                             <button type="button" id="absence-exclusions-heading" aria-controls="null-content-7" class="govuk-accordion__section-button" aria-expanded="false">Absence and exclusions<span class="govuk-accordion__icon" aria-hidden="true"></span></button>
-                          </h2>
-                       </div>
-                       <div class="govuk-accordion__section-content" id="absence-exclusions-report-panel" aria-describedby="absence-exclusions-heading">
-                          <ul class="govuk-list">
-                             <li>
-                                <a href="#" class="dont-print report-link govuk-link">Absence</a>
-                             </li>
-                             <li>
-                                <a href="#" class="dont-print report-link govuk-link">Exclusions</a>
-                             </li>
-                          </ul>
-                       </div>
-                    </div>
-                    <div id="school-characteristics-accordion" class="govuk-accordion__section">
-                       <div class="govuk-accordion__section-header">
-                          <h2 class="govuk-accordion__section-heading">
-                             <button type="button" id="school-characteristics-heading" aria-controls="null-content-8" class="govuk-accordion__section-button" aria-expanded="false">School characteristics<span class="govuk-accordion__icon" aria-hidden="true"></span></button>
-                          </h2>
-                       </div>
-                       <div class="govuk-accordion__section-content" id="school-characteristics-report-panel" aria-describedby="school-characteristics-heading">
-                          <ul class="govuk-list">
-                             <li>
-                                <a id="school-characteristics-trends" href="#" class="dont-print report-link govuk-link">Basic characteristics trends</a>
-                             </li>
-                             <li>
-                                <a id="school-characteristics-by-national-curriculum-year-group" href="#" class="dont-print report-link govuk-link">Basic characteristics by national curriculum year group</a>
-                             </li>
-                          </ul>
-                       </div>
-                    </div>
-                 </div>
-                </div>
+           </div>
+           <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                 <h2 class="govuk-accordion__section-heading">
+                    <button type="button" id="accordion-summary-reports" aria-controls="null-content-2" class="govuk-accordion__section-button" aria-expanded="false">School performance summary<span class="govuk-accordion__icon" aria-hidden="true"></span></button>
+                 </h2>
               </div>
-          </div>
+              <div class="govuk-accordion__section-content" id="summary-report-panel" aria-describedby="accordion-summary-reports">
+                 <ul class="govuk-list">
+                    <li>
+                       <a class="report-link govuk-link" href="#">School performance summary for 2022/2023</a>
+                    </li>
+                    <li>
+                       <a class="report-link govuk-link" href="#">School performance summary for 2021/2022</a>
+                    </li>
+                    <li>
+                       <a class="report-link govuk-link" href="#">School performance summary for 2020/2021</a>
+                    </li>
+                    <li>
+                       <a class="report-link govuk-link" href="#">School performance summary for 2018/2019</a>
+                    </li>
+                    <li>
+                       <a class="report-link govuk-link" href="#">School performance summary for 2017/2018</a>
+                    </li>
+                    <li>
+                       <a class="report-link govuk-link" href="#">School performance summary for 2016/2017</a>
+                    </li>
+                    <li>
+                       <a class="report-link govuk-link" href="#">School performance summary for 2015/2016</a>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+           <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-content" id="ks2-measures-panel" aria-describedby="ks2-heading">
+                 <ul class="govuk-list">
+                    <li>
+                       <a id="headline-measures-link_Ks2" href="#" class="dont-print report-link govuk-link">Headline measures</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print report-link govuk-link">Reading</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print report-link govuk-link">Writing</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print report-link govuk-link">Maths</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print report-link govuk-link">Reading, writing and maths combined</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print chart-link govuk-link">Progress scatter plot</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print chart-link govuk-link">Attainment scatter plot</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print report-link govuk-link">EGPS</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print report-link govuk-link">Science</a>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+           <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                 <h2 class="govuk-accordion__section-heading">
+                    <button type="button" id="absence-exclusions-heading" aria-controls="null-content-7" class="govuk-accordion__section-button" aria-expanded="false">Absence and exclusions<span class="govuk-accordion__icon" aria-hidden="true"></span></button>
+                 </h2>
+              </div>
+              <div class="govuk-accordion__section-content" id="absence-exclusions-report-panel" aria-describedby="absence-exclusions-heading">
+                 <ul class="govuk-list">
+                    <li>
+                       <a href="#" class="dont-print report-link govuk-link">Absence</a>
+                    </li>
+                    <li>
+                       <a href="#" class="dont-print report-link govuk-link">Exclusions</a>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+           <div id="school-characteristics-accordion" class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                 <h2 class="govuk-accordion__section-heading">
+                    <button type="button" id="school-characteristics-heading" aria-controls="null-content-8" class="govuk-accordion__section-button" aria-expanded="false">School characteristics<span class="govuk-accordion__icon" aria-hidden="true"></span></button>
+                 </h2>
+              </div>
+              <div class="govuk-accordion__section-content" id="school-characteristics-report-panel" aria-describedby="school-characteristics-heading">
+                 <ul class="govuk-list">
+                    <li>
+                       <a id="school-characteristics-trends" href="#" class="dont-print report-link govuk-link">Basic characteristics trends</a>
+                    </li>
+                    <li>
+                       <a id="school-characteristics-by-national-curriculum-year-group" href="#" class="dont-print report-link govuk-link">Basic characteristics by national curriculum year group</a>
+                    </li>
+                 </ul>
+              </div>
+           </div>
         </div>
         <!--END OF TABS-->
-      </div>
-      <details class="govuk-details" data-module="govuk-details">
+     </div>
+     <details class="govuk-details" data-module="govuk-details">
         <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text govuk-body-s">
-            Help us improve Analyse School Performance
-          </span>
+           <span class="govuk-details__summary-text govuk-body-s">
+           Help us improve Analyse School Performance
+           </span>
         </summary>
         <div class="govuk-details__text">
-            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
-            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
-            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
-            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+           <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+           <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+           <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+           <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
         </div>
-      </details>
+     </details>
   </main>
 </div>
 {% endblock %}

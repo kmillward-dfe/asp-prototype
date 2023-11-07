@@ -47,7 +47,12 @@ $("#ks1-maths-exp-std-table-link").click(function(){
 $("#ks1-maths-hi-std-table-link").click(function(){
   $("#ks1-maths-hi-std-table").slideToggle("fast");
 });
-
+$("#phonics-attainment-clusters-table-link").click(function(){
+  $("#phonics-attainment-clusters-table").slideToggle("fast");
+});
+$("#phonics-attainment-percentage-table-link").click(function(){
+  $("#phonics-attainment-percentage-table").slideToggle("fast");
+});
 
 
 // $('.govuk-header__container').append("<div class='header-links'><p>Joe Bloggs</p><ul><li><a href='#' class='header-sign-out'>Sign out</a></li></ul>");

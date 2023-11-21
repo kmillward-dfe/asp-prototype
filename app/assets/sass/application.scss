@@ -68,6 +68,9 @@ $govuk-assets-path: '/govuk/assets/';
 .govuk-table.asp-report-table {
     border-top: 1px solid #b1b4b6;
     font-size: 13px;
+    &.bigger {
+        font-size: 16px;
+    }
     td, th {
       border-right: 1px solid #b1b4b6;  
       border-left: 1px solid #b1b4b6; 

@@ -1,0 +1,1702 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+ASP - Entering EBacc
+{% endblock %}
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+   <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+   <ul class="app-navigation__list app-width-container">
+      <li><a href="home.html"><strong>Home</strong></a></li>
+      <li class="active"><a href="my-school.html"><strong>My school</strong></a></li>
+      <!-- <li><a href="search.html"><strong>Search</strong></a></li> -->
+      <li><a href="#"><strong>Download data</strong></a></li>
+      <li><a href="#"><strong>Site news</strong></a></li>
+      <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
+      <li><a href="guidance.html"><strong>Guidance</strong></a></li>
+   </ul>
+</nav>
+
+<div class="govuk-phase-banner">
+   <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+      </span>
+   </p>
+</div>
+
+<div class="govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="my-school.html">My school</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="key-stage-2.html">Key stage 4</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+         Entering EBacc
+      </li>
+      
+   </ol>
+</div>
+
+<h1 class="govuk-heading-xl">Entering EBacc</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">Secondary school name <span class="urn">(URN: 000000)</span></h2>
+
+<nav class="sub-navigation" aria-label="Sub navigation">
+   <ul class="sub-navigation__list">
+     <li class="sub-navigation__item">
+       <a class="sub-navigation__link" href="qla.html">Question level analysis</a>
+     </li>
+       <li class="sub-navigation__item">
+         <a class="sub-navigation__link" aria-current="page" href="key-stage-4.html"><strong>Key stage 4</strong></a>
+      </li>
+       <li class="sub-navigation__item">
+          <a class="sub-navigation__link" href="other-reports.html">Other reports</a>
+       </li>
+       <li class="sub-navigation__item">
+          <a class="sub-navigation__link" href="useful-links.html">Useful links</a>
+       </li>
+    </ul>
+ </nav>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper main-asp">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="page-content js-content-target">
+            <div class="govuk-grid-row">
+               <div class="govuk-grid-column-one-half">
+                 <h2 class="govuk-heading-m">Entering EBacc</h2>
+               </div>
+               <div class="govuk-grid-column-one-half download-to-pdf">
+                 <button class="govuk-button" data-module="govuk-button">
+                   Download PDF to print or save
+                 </button>
+               </div>
+            </div>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                  <div class="govuk-grid-row">
+                     <div class="govuk-grid-column-one-third side-nav bigtable">
+                        <div class="moj-filter">
+                           <div class="moj-filter__header">
+                              <div class="moj-filter__header-title">
+                                 <h2 class="govuk-heading-s"><strong>Filter</strong></h2>
+                              </div>
+                              <div class="moj-filter__header-action">
+                              </div>
+                           </div>
+                           <div class="moj-filter__content">
+                              
+                              <div class="moj-filter__options">
+                                 <div class="govuk-form-group">
+                                    <fieldset class="govuk-fieldset">
+                                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                          Gender
+                                       </legend>
+                                       <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1">
+                                             <label class="govuk-label govuk-checkboxes__label" for="type">
+                                             Male
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="type-2" name="type" type="checkbox" value="2">
+                                             <label class="govuk-label govuk-checkboxes__label govuk-body-s" for="type-2">
+                                             Female
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </div>
+                                 <div class="govuk-form-group">
+                                    <fieldset class="govuk-fieldset">
+                                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                          Disadvantaged
+                                       </legend>
+                                       <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1">
+                                             <label class="govuk-label govuk-checkboxes__label" for="type">
+                                             Disadvantaged
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="type-2" name="type" type="checkbox" value="2">
+                                             <label class="govuk-label govuk-checkboxes__label govuk-body-s" for="type-2">
+                                             Non disadvantaged
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </div>
+                                 <div class="govuk-form-group">
+                                    <fieldset class="govuk-fieldset">
+                                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                          Special educational needs (SEN)
+                                       </legend>
+                                       <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox" value="complete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status">
+                                             SEN EHCP
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                                             SEN support
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status-3" name="status" type="checkbox" value="inprogress">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status-3">
+                                             No SEN
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </div>
+                                 <div class="govuk-form-group">
+                                    <fieldset class="govuk-fieldset">
+                                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                          Non-mobile
+                                       </legend>
+                                       <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox" value="complete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status">
+                                             Yes
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                                             No
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </div>
+                                 <div class="govuk-form-group">
+                                    <fieldset class="govuk-fieldset">
+                                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                          First language
+                                       </legend>
+                                       <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox" value="complete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status">
+                                             English first language
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                                             English additional language
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                                             Unknown
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </div>
+                                 <div class="govuk-form-group">
+                                    <fieldset class="govuk-fieldset">
+                                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                          Prior attainment band
+                                       </legend>
+                                       <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox" value="complete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status">
+                                             Low overall
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                                             Middle overall
+                                             </label>
+                                          </div>
+                                          <div class="govuk-checkboxes__item">
+                                             <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                                             <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                                             High overall
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </div>
+                                 <div class="govuk-form-group">
+                                    <fieldset class="govuk-fieldset">
+                                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                          Ethnicity
+                                       </legend>
+                                       <div class="govuk-option-select">
+                                          <label for="Ethnicity" class="govuk-visually-hidden">Select ethnicity:</label>
+                                          <select id="Ethnicity" name="Ethnicity">
+                                             <option value="1">White British</option>
+                                             <option value="2">White Irish</option>
+                                             <option value="3">White Irish traveller</option>
+                                             <option value="4">Gypsy/Roma</option>
+                                             <option value="5">White other</option>
+                                             <option value="6">Mixed white &amp; black Caribbean</option>
+                                             <option value="7">Mixed white &amp; black African</option>
+                                             <option value="8">Mixed white &amp; Asian</option>
+                                             <option value="9">Other mixed group</option>
+                                             <option value="10">Indian</option>
+                                             <option value="11">Pakistani</option>
+                                             <option value="12">Mixed white &amp; black African</option>
+                                             <option value="13">Bangladeshi</option>
+                                             <option value="14">Any other Asian background</option>
+                                             <option value="15">Black Caribbean</option>
+                                             <option value="16">Black African</option>
+                                             <option value="17">Other black ethnic group</option>
+                                             <option value="18">Chinese</option>
+                                             <option value="19">Other ethnic group</option>
+                                             <option value="20">Refused</option>
+                                             <option value="21">Information not obtained</option>
+                                          </select>
+                                       </div>
+                                    </fieldset>
+                                 </div>
+                                 <button class="govuk-button" data-module="govuk-button" data-test-id="submit-button">
+                                    Apply filters
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="govuk-grid-column-two-thirds bigtable">
+                        <div class="govuk-grid-row">
+
+                           <div class="govuk-tabs" data-module="govuk-tabs">
+                              <h2 class="govuk-tabs__title">
+                                Contents
+                              </h2>
+                              <ul class="govuk-tabs__list">
+                                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                                  <a class="govuk-tabs__tab" href="#ebacc">
+                                    English Baccalaureate
+                                  </a>
+                                </li>
+                                <li class="govuk-tabs__list-item">
+                                  <a class="govuk-tabs__tab" href="#eng">
+                                    English
+                                  </a>
+                                </li>
+                                <li class="govuk-tabs__list-item">
+                                 <a class="govuk-tabs__tab" href="#math">
+                                   Maths
+                                 </a>
+                               </li>
+                               <li class="govuk-tabs__list-item">
+                                 <a class="govuk-tabs__tab" href="#science">
+                                   Science
+                                 </a>
+                               </li>
+                               <li class="govuk-tabs__list-item">
+                                 <a class="govuk-tabs__tab" href="#lang">
+                                   Languages
+                                 </a>
+                               </li>
+                               <li class="govuk-tabs__list-item">
+                                 <a class="govuk-tabs__tab" href="#human">
+                                    Humanities
+                                 </a>
+                               </li>
+                              </ul>
+                              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ebacc">
+                                <h2 class="govuk-heading-m">Percentage entering English Baccalaureate</h2>
+                                <table class="govuk-table asp-report-table asp-report-table table-print-full-width govuk-!-font-size-12 asp-compressed-report is-stickyTableHeaderActive">
+                                 <thead class="govuk-table__head">
+                                    <tr class="govuk-table__row">
+                                       <th scope="col" rowspan="2" class="govuk-table__header asp-cell-0" role="columnheader">
+                                          Breakdown
+                                       </th>
+                                       <th scope="col" rowspan="2" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                          Cohort
+                                       </th>
+                                       <th scope="col" colspan="3" class="govuk-table__header asp-table__header--group-title" role="columnheader">
+                                          English Baccalaureate
+                                       </th>
+                                    </tr>
+                                    <tr class="govuk-table__row">
+                                       <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                          No. of Entries
+                                       </th>
+                                       <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                          School %
+                                       </th>
+                                       <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                          National %
+                                       </th>
+                                    </tr>
+                                 </thead>
+                                 <tbody class="govuk-table__body">
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header asp-table__heading--bold" scope="row">
+                                          All pupils
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">231 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">164 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Male
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">120 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">89 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">74 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">35 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Female
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">111 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">75 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row l4l-row tweak-for-l4l ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          <span>Disadvantaged</span>
+                                          <a class="icon-more-info-help u-hidden comparator-help" href="#H2591" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">47 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">32 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric">
+                                          <span class="comparison-value-0 ">43</span>
+                                          <span class="comparison-value-1 u-hidden">
+                                          <span class="cell-description">Like-for-like</span>
+                                          <a class="icon-more-info-help " href="#H1068" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          <br>
+                                          <span class="comparator-highlight ">28</span>
+                                          </span>
+                                       </td>
+                                    </tr>
+                                    <tr class="govuk-table__row row-other">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Other
+                                          <a class="icon-more-info-help u-hidden comparator-help" href="#H2646" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">184 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">132 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">43 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          SEN EHCP
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">41 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          SEN support
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">49 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          No SEN
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">125 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Non-mobile
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">222 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">161 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          English first language
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          English additional language
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">82 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header asp-table__heading--bold" scope="row" colspan="20">
+                                          Prior attainment
+                                       </th>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Low overall
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">34 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Middle overall
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">126 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">88 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">70 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          High overall
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">91 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">62 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Reading low
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">18 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Reading middle
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">113 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">81 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Reading high
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">66 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">90 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Maths low
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">33 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">48 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Maths middle
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">131 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">95 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Maths high
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">63 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">53 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              </div>
+                              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="eng">
+                                <h2 class="govuk-heading-m">Percentage entering English Baccalaureate: English elementt</h2>
+                                <table class="govuk-table asp-report-table asp-report-table table-print-full-width govuk-!-font-size-12 asp-compressed-report is-stickyTableHeaderActive">
+                                 <thead class="govuk-table__head">
+                                    <tr class="govuk-table__row">
+                                       <th scope="col" rowspan="2" class="govuk-table__header asp-cell-0" role="columnheader">
+                                          Breakdown
+                                       </th>
+                                       <th scope="col" rowspan="2" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                          Cohort
+                                       </th>
+                                       <th scope="col" colspan="3" class="govuk-table__header asp-table__header--group-title" role="columnheader">
+                                          English
+                                       </th>
+                                    </tr>
+                                    <tr class="govuk-table__row">
+                                       <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                          No. of Entries
+                                       </th>
+                                       <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                          School %
+                                       </th>
+                                       <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                          National %
+                                       </th>
+                                    </tr>
+                                 </thead>
+                                 <tbody class="govuk-table__body">
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header asp-table__heading--bold" scope="row">
+                                          All pupils
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">231 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">164 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Male
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">120 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">89 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">74 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">35 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Female
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">111 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">75 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row l4l-row tweak-for-l4l ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          <span>Disadvantaged</span>
+                                          <a class="icon-more-info-help u-hidden comparator-help" href="#H2591" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">47 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">32 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric">
+                                          <span class="comparison-value-0 ">43</span>
+                                          <span class="comparison-value-1 u-hidden">
+                                          <span class="cell-description">Like-for-like</span>
+                                          <a class="icon-more-info-help " href="#H1068" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          <br>
+                                          <span class="comparator-highlight ">28</span>
+                                          </span>
+                                       </td>
+                                    </tr>
+                                    <tr class="govuk-table__row row-other">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Other
+                                          <a class="icon-more-info-help u-hidden comparator-help" href="#H2646" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">184 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">132 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">43 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          SEN EHCP
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">41 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          SEN support
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">49 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          No SEN
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">125 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Non-mobile
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">222 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">161 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          English first language
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          English additional language
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">82 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header asp-table__heading--bold" scope="row" colspan="20">
+                                          Prior attainment
+                                       </th>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Low overall
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">34 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Middle overall
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">126 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">88 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">70 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          High overall
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">91 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">62 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Reading low
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">18 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Reading middle
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">113 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">81 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Reading high
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">66 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">90 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Maths low
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">33 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">48 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Maths middle
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">131 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">95 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                    </tr>
+                                    <tr class="govuk-table__row ">
+                                       <th class="govuk-table__header row" scope="row">
+                                          Maths high
+                                       </th>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">63 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">53 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                       <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              </div>
+                              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="math">
+                                 <h2 class="govuk-heading-m">Percentage entering English Baccalaureate: Maths element</h2>
+                                 <table class="govuk-table asp-report-table asp-report-table table-print-full-width govuk-!-font-size-12 asp-compressed-report is-stickyTableHeaderActive">
+                                    <thead class="govuk-table__head">
+                                       <tr class="govuk-table__row">
+                                          <th scope="col" rowspan="2" class="govuk-table__header asp-cell-0" role="columnheader">
+                                             Breakdown
+                                          </th>
+                                          <th scope="col" rowspan="2" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             Cohort
+                                          </th>
+                                          <th scope="col" colspan="3" class="govuk-table__header asp-table__header--group-title" role="columnheader">
+                                             Maths
+                                          </th>
+                                       </tr>
+                                       <tr class="govuk-table__row">
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             No. of Entries
+                                          </th>
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             School %
+                                          </th>
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             National %
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody class="govuk-table__body">
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header asp-table__heading--bold" scope="row">
+                                             All pupils
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">231 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">164 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Male
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">120 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">89 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">74 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">35 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Female
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">111 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">75 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row l4l-row tweak-for-l4l ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             <span>Disadvantaged</span>
+                                             <a class="icon-more-info-help u-hidden comparator-help" href="#H2591" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">47 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">32 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric">
+                                             <span class="comparison-value-0 ">43</span>
+                                             <span class="comparison-value-1 u-hidden">
+                                             <span class="cell-description">Like-for-like</span>
+                                             <a class="icon-more-info-help " href="#H1068" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                             <br>
+                                             <span class="comparator-highlight ">28</span>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr class="govuk-table__row row-other">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Other
+                                             <a class="icon-more-info-help u-hidden comparator-help" href="#H2646" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">184 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">132 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">43 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             SEN EHCP
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">41 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             SEN support
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">49 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             No SEN
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">125 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Non-mobile
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">222 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">161 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             English first language
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             English additional language
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">82 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header asp-table__heading--bold" scope="row" colspan="20">
+                                             Prior attainment
+                                          </th>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Low overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">34 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Middle overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">126 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">88 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">70 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             High overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">91 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">62 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading low
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">18 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading middle
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">113 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">81 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading high
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">66 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">90 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths low
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">33 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">48 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths middle
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">131 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">95 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths high
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">63 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">53 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                               </div>
+                               <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="science">
+                                 <h2 class="govuk-heading-m">Percentage entering English Baccalaureate: Science element</h2>
+                                 <table class="govuk-table asp-report-table asp-report-table table-print-full-width govuk-!-font-size-12 asp-compressed-report is-stickyTableHeaderActive">
+                                    <thead class="govuk-table__head">
+                                       <tr class="govuk-table__row">
+                                          <th scope="col" rowspan="2" class="govuk-table__header asp-cell-0" role="columnheader">
+                                             Breakdown
+                                          </th>
+                                          <th scope="col" rowspan="2" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             Cohort
+                                          </th>
+                                          <th scope="col" colspan="3" class="govuk-table__header asp-table__header--group-title" role="columnheader">
+                                             Science
+                                          </th>
+                                       </tr>
+                                       <tr class="govuk-table__row">
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             No. of Entries
+                                          </th>
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             School %
+                                          </th>
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             National %
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody class="govuk-table__body">
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header asp-table__heading--bold" scope="row">
+                                             All pupils
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">231 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">164 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Male
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">120 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">89 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">74 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">35 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Female
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">111 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">75 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row l4l-row tweak-for-l4l ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             <span>Disadvantaged</span>
+                                             <a class="icon-more-info-help u-hidden comparator-help" href="#H2591" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">47 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">32 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric">
+                                             <span class="comparison-value-0 ">43</span>
+                                             <span class="comparison-value-1 u-hidden">
+                                             <span class="cell-description">Like-for-like</span>
+                                             <a class="icon-more-info-help " href="#H1068" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                             <br>
+                                             <span class="comparator-highlight ">28</span>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr class="govuk-table__row row-other">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Other
+                                             <a class="icon-more-info-help u-hidden comparator-help" href="#H2646" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">184 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">132 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">43 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             SEN EHCP
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">41 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             SEN support
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">49 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             No SEN
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">125 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Non-mobile
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">222 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">161 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             English first language
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             English additional language
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">82 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header asp-table__heading--bold" scope="row" colspan="20">
+                                             Prior attainment
+                                          </th>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Low overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">34 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Middle overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">126 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">88 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">70 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             High overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">91 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">62 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading low
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">18 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading middle
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">113 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">81 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading high
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">66 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">90 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths low
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">33 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">48 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths middle
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">131 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">95 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths high
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">63 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">53 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                               </div>
+                               <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="lang">
+                                 <h2 class="govuk-heading-m">Percentage entering English Baccalaureate: Languages element</h2>
+                                 <table class="govuk-table asp-report-table asp-report-table table-print-full-width govuk-!-font-size-12 asp-compressed-report is-stickyTableHeaderActive">
+                                    <thead class="govuk-table__head">
+                                       <tr class="govuk-table__row">
+                                          <th scope="col" rowspan="2" class="govuk-table__header asp-cell-0" role="columnheader">
+                                             Breakdown
+                                          </th>
+                                          <th scope="col" rowspan="2" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             Cohort
+                                          </th>
+                                          <th scope="col" colspan="3" class="govuk-table__header asp-table__header--group-title" role="columnheader">
+                                             Languages
+                                          </th>
+                                       </tr>
+                                       <tr class="govuk-table__row">
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             No. of Entries
+                                          </th>
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             School %
+                                          </th>
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             National %
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody class="govuk-table__body">
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header asp-table__heading--bold" scope="row">
+                                             All pupils
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">231 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">164 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Male
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">120 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">89 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">74 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">35 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Female
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">111 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">75 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row l4l-row tweak-for-l4l ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             <span>Disadvantaged</span>
+                                             <a class="icon-more-info-help u-hidden comparator-help" href="#H2591" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">47 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">32 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric">
+                                             <span class="comparison-value-0 ">43</span>
+                                             <span class="comparison-value-1 u-hidden">
+                                             <span class="cell-description">Like-for-like</span>
+                                             <a class="icon-more-info-help " href="#H1068" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                             <br>
+                                             <span class="comparator-highlight ">28</span>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr class="govuk-table__row row-other">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Other
+                                             <a class="icon-more-info-help u-hidden comparator-help" href="#H2646" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">184 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">132 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">43 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             SEN EHCP
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">41 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             SEN support
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">49 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             No SEN
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">125 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Non-mobile
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">222 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">161 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             English first language
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             English additional language
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">82 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header asp-table__heading--bold" scope="row" colspan="20">
+                                             Prior attainment
+                                          </th>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Low overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">34 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Middle overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">126 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">88 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">70 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             High overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">91 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">62 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading low
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">18 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading middle
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">113 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">81 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading high
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">66 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">90 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths low
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">33 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">48 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths middle
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">131 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">95 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths high
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">63 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">53 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                               </div>
+                               <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="human">
+                                 <h2 class="govuk-heading-m">Percentage entering English Baccalaureate: Humanities element</h2>
+                                 <table class="govuk-table asp-report-table asp-report-table table-print-full-width govuk-!-font-size-12 asp-compressed-report is-stickyTableHeaderActive">
+                                    <thead class="govuk-table__head">
+                                       <tr class="govuk-table__row">
+                                          <th scope="col" rowspan="2" class="govuk-table__header asp-cell-0" role="columnheader">
+                                             Breakdown
+                                          </th>
+                                          <th scope="col" rowspan="2" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             Cohort
+                                          </th>
+                                          <th scope="col" colspan="3" class="govuk-table__header asp-table__header--group-title" role="columnheader">
+                                             Humanities
+                                          </th>
+                                       </tr>
+                                       <tr class="govuk-table__row">
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             No. of Entries
+                                          </th>
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             School %
+                                          </th>
+                                          <th scope="col" class="govuk-table__header govuk-table__cell--numeric" role="columnheader">
+                                             National %
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody class="govuk-table__body">
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header asp-table__heading--bold" scope="row">
+                                             All pupils
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">231 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">164 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Male
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">120 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">89 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">74 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">35 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Female
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">111 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">75 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row l4l-row tweak-for-l4l ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             <span>Disadvantaged</span>
+                                             <a class="icon-more-info-help u-hidden comparator-help" href="#H2591" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">47 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">32 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">68 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric">
+                                             <span class="comparison-value-0 ">43</span>
+                                             <span class="comparison-value-1 u-hidden">
+                                             <span class="cell-description">Like-for-like</span>
+                                             <a class="icon-more-info-help " href="#H1068" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                             <br>
+                                             <span class="comparator-highlight ">28</span>
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr class="govuk-table__row row-other">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Other
+                                             <a class="icon-more-info-help u-hidden comparator-help" href="#H2646" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">184 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">132 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">43 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             SEN EHCP
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">41 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             SEN support
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">49 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             No SEN
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">125 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Non-mobile
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">222 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">161 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             English first language
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">80 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">57 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             English additional language
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">82 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">71 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header asp-table__heading--bold" scope="row" colspan="20">
+                                             Prior attainment
+                                          </th>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Low overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">34 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">44 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">15 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Middle overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">126 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">88 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">70 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             High overall
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">67 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">91 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">62 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading low
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">18 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading middle
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">113 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">81 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">72 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">39 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Reading high
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">66 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">90 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">58 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths low
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">33 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">48 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">16 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths middle
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">131 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">95 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">73 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">40 </span></td>
+                                       </tr>
+                                       <tr class="govuk-table__row ">
+                                          <th class="govuk-table__header row" scope="row">
+                                             Maths high
+                                          </th>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">63 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">53 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">84 </span></td>
+                                          <td class="govuk-table__cell govuk-table__cell--numeric"><span class="table-value-wrapper">61 </span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                               </div>
+                            </div>      
+                           
+                     </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!--END OF TABS-->
+      </div>
+      </div>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text govuk-body-s">
+            Help us improve Analyse School Performance
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+        </div>
+      </details>
+  </main>
+</div>
+{% endblock %}

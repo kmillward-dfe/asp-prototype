@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block pageTitle %}
-ASP - Key stage 2
+ASP - QLA
 {% endblock %}
 {% block content %}
 <nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
@@ -36,12 +36,12 @@ ASP - Key stage 2
          <a class="govuk-breadcrumbs__link" href="my-school.html">My school</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        Key stage 2
+        Question level analysis
       </li>
    </ol>
 </div>
 
-<h1 class="govuk-heading-xl">Key stage 2</h1>
+<h1 class="govuk-heading-xl">Question level analysis</h1>
 <h2 id="school-name-heading" class="govuk-heading-m">Primary school name <span class="urn">(URN: 000000)</span></h2>
 
 <nav class="sub-navigation" aria-label="Sub navigation">
@@ -53,13 +53,13 @@ ASP - Key stage 2
          <a class="sub-navigation__link" href="key-stage-1.html">Key stage 1</a>
       </li>
       <li class="sub-navigation__item">
-         <a class="sub-navigation__link" href="mtc.html">Multiplication table check</a>
+         <a class="sub-navigation__link"  href="mtc.html">Multiplication table check</a>
       </li>
       <li class="sub-navigation__item">
-        <a class="sub-navigation__link" aria-current="page" href="key-stage-2.html"><strong>Key stage 2</strong></a>
+        <a class="sub-navigation__link" href="key-stage-2.html">Key stage 2</a>
      </li>
      <li class="sub-navigation__item">
-      <a class="sub-navigation__link" href="qla.html">Question level analysis</a>
+      <a class="sub-navigation__link" aria-current="page" href="qla.html"><strong>Question level analysis</strong></a>
    </li>
       <li class="sub-navigation__item">
          <a class="sub-navigation__link" href="other-reports.html">Other reports</a>
@@ -75,53 +75,30 @@ ASP - Key stage 2
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-third side-nav">
           <nav class="side-navigation" aria-label="Side navigation">
-              <ul class="side-navigation__list">
-                <li class="side-navigation__item side-navigation__item--active">
-                    <a href="#1" aria-current="location">Headline Measures</a>
-                </li>
-               </ul>
-           </nav>
-           <h2 class="govuk-heading-s">Headline reports</h2>
-           <nav class="side-navigation" aria-label="Side navigation">
-              <ul class="side-navigation__list">
-                <li class="side-navigation__item">
-                    <a href="#2">Reading</a>
-                </li>
-                <li class="side-navigation__item">
-                    <a href="#3">Writing</a>
-                </li>
-                <li class="side-navigation__item">
-                    <a href="#3">Maths</a>
-                </li>
-                <li class="side-navigation__item">
-                    <a href="#3">Reading, writing and maths combined</a>
-                </li>
-                <li class="side-navigation__item">
-                    <a href="key-stage-2-pupil-data.html">Progress scatter plot</a>
-                </li>
-                <li class="side-navigation__item">
-                    <a href="key-stage-2-attainment-data.html">Attainment scatter plot</a>
-                </li>
-              </ul>
-          </nav>
-          <h2 class="govuk-heading-s">Additional reports</h2>
-           <nav class="side-navigation" aria-label="Side navigation">
-              <ul class="side-navigation__list">
-                <li class="side-navigation__item">
-                    <a href="#2">English grammar, punctuation and spelling attainment</a>
-                </li>
-                <li class="side-navigation__item">
-                    <a href="#2">Science attainment</a>
-                </li>
+            <ul class="side-navigation__list">
+              <li class="side-navigation__item side-navigation__item--active">
+                  <a href="#1" aria-current="location">Performance Measures</a>
+              </li>
             </ul>
         </nav>
+        <h2 class="govuk-heading-s">Additional reports</h2>
+         <nav class="side-navigation" aria-label="Side navigation">
+            <ul class="side-navigation__list">
+              <li class="side-navigation__item">
+                  <a href="#">Taking the check</a>
+              </li>
+              <li class="side-navigation__item">
+                  <a href="#">Mean average score</a>
+              </li>
+          </ul>
+          </nav>
         </div>
         <!--TABS-->
         <div class="govuk-grid-column-two-thirds">
           <div class="page-content js-content-target">
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-one-half">
-                <h2 class="govuk-heading-l">Headline Measures</h2>
+                <h2 class="govuk-heading-l">Performance Measures</h2>
               </div>
               <div class="govuk-grid-column-one-half download-to-pdf">
                 <button class="govuk-button" data-module="govuk-button">
@@ -137,126 +114,11 @@ ASP - Key stage 2
                     <div class="data-message-container">
                       <p>This is provisional data for 2021/22.</p>
                     </div>
-
-                    <div class="score-section" id="ks2summary-progressrwm">
-                        <h2 id="ks2-rwm-progress-heading" class="govuk-heading-m">Progress in reading, writing and maths <a class="icon-more-info-help " href="#ks2-progress-scores" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
-                        </h2>
-                        <div class="govuk-grid-row">
-                            <div class="govuk-grid-column-one-third measures">
-                                <h3 class="govuk-heading-s">
-                                    Reading
-                                    <a class="icon-more-info-help " href="#help-ks2-reading-progress" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
-                                </h3>
-                                <strong class="govuk-tag govuk-tag--yellow">
-                                    <img id="average-sign" src="/public/images/average-marker.png" alt="average sign" width="14px" height="4px"/> Average <span class="asp-progress-traffic-light__score">-0.73</span>
-                                </strong>
-                                <div class="asp-ci-description">
-                                    <table class="govuk-table measures">
-                                        <thead class="govuk-table__head">
-                                            <tr class="govuk-table__row">
-                                            <th scope="col" class="govuk-table__header">Measure</th>
-                                            <th scope="col" class="govuk-table__header">Data</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="govuk-table__body">
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Number of pupils</th>
-                                            <td class="govuk-table__cell">55</td>
-                                            </tr>
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Pupils with adjusted scores</th>
-                                            <td class="govuk-table__cell">1</td>
-                                            </tr>
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Confidence interval <a class="icon-more-info-help " href="#help-confidence-interval-ks2" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a></th>
-                                            <td class="govuk-table__cell">-2.4 to 0.9</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <a href="key-stage-2-reading-attainment.html">Explore reading data in detail</a> 
-                            </div>
-                    
-                            <div class="govuk-grid-column-one-third measures">
-                                <h3 class="govuk-heading-s">
-                                    Writing
-                                    <a class="icon-more-info-help " href="#help-ks2-writing-progress" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
-                                </h3>
-                                <strong class="govuk-tag govuk-tag--red">
-                                    <img src="/public/images/down-marker.png" alt="down arrow" width="14px" height="10px"/> Below average <span class="asp-progress-traffic-light__score">-1.20</span>
-                                </strong>
-                                <div class="asp-ci-description">
-                                    <table class="govuk-table measures">
-                                        <thead class="govuk-table__head">
-                                            <tr class="govuk-table__row">
-                                            <th scope="col" class="govuk-table__header">Measure</th>
-                                            <th scope="col" class="govuk-table__header">Data</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="govuk-table__body">
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Number of pupils</th>
-                                            <td class="govuk-table__cell">55</td>
-                                            </tr>
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Pupils with adjusted scores</th>
-                                            <td class="govuk-table__cell">0</td>
-                                            </tr>
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Confidence interval <a class="icon-more-info-help " href="#help-confidence-interval-ks2" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a></th>
-                                            <td class="govuk-table__cell">-0.4 to 2.8</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <a href="key-stage-2-writing-attainment.html">Explore writing data in detail</a>
-                            </div>
-                    
-                            <div class="govuk-grid-column-one-third measures">
-                                <h3 class="govuk-heading-s">
-                                    Maths
-                                    <a class="icon-more-info-help " href="#help-ks2-maths-progress" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
-                                </h3>
-                                <strong class="govuk-tag govuk-tag--green">
-                                    <img src="/public/images/up-marker.png" alt="up arrow" width="14px" height="10px"/> Above average <span class="asp-progress-traffic-light__score">-0.65</span>
-                                </strong>
-                                <div class="asp-ci-description">
-                                    <table class="govuk-table measures">
-                                        <thead class="govuk-table__head">
-                                            <tr class="govuk-table__row">
-                                            <th scope="col" class="govuk-table__header">Measure</th>
-                                            <th scope="col" class="govuk-table__header">Data</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="govuk-table__body">
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Number of pupils</th>
-                                            <td class="govuk-table__cell">55</td>
-                                            </tr>
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Pupils with adjusted scores</th>
-                                            <td class="govuk-table__cell">1</td>
-                                            </tr>
-                                            <tr class="govuk-table__row">
-                                            <th scope="row" class="govuk-table__header">Confidence interval <a class="icon-more-info-help " href="#help-confidence-interval-ks2" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a></th>
-                                            <td class="govuk-table__cell">-0.9 to 2.2</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <a href="key-stage-2-maths-attainment.html">Explore maths data in detail</a>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
                       <h3 class="govuk-heading-m">
-                          Reading, writing and maths combined
+                          Percentage achieving the expected standard or higher in reading
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
                       </h3>
-                      <h4 class="govuk-heading-s">
-                        Percentage of pupils achieving the expected standard or higher
-                        <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
-                      </h4>
                       <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
                       <div class="school-chart" id="chart-ks1-reading-exp-std-table">
                           <svg width="680" height="162">
@@ -279,7 +141,7 @@ ASP - Key stage 2
                                   <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
                                 </g>
                             </g>
-                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the expected standard or higher</text>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the expected standard or higher in reading</text>
                             <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
                                 <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
                             </g>
@@ -302,7 +164,7 @@ ASP - Key stage 2
                       </div>
                       <button class="govuk-button link" id="ks1-reading-exp-std-table-link">View as table</button>    
                       <table class="ks1-reading-exp-std-data asp-chart-table govuk-table u-printHidden" id="ks1-reading-exp-std-table" aria-hidden="true" style="position: relative;display:none;">
-                          <caption class="govuk-visually-hidden">Percentage of pupils achieving the expected standard or higher</caption>
+                          <caption class="govuk-visually-hidden">Percentage achieving the expected standard or higher in reading data for Shotton Hall Primary School</caption>
                           <thead class="govuk-table__head">
                             <tr class="govuk-table__row">
                                 <td class="govuk-table__cell"></td>
@@ -313,18 +175,21 @@ ASP - Key stage 2
                           </thead>
                           <tbody class="govuk-table__body">
                             <tr class="govuk-table__row">
-                                <th scope="row" class="govuk-table__header">Percentage of pupils achieving the expected standard or higher</th>
+                                <th scope="row" class="govuk-table__header">Percentage achieving the expected standard or higher in reading</th>
                                 <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">76%</td>
                                 <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">65%</td>
                                 <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">67%</td>
                             </tr>
                           </tbody>
                       </table>
-                      <br/><br/>
-                      <h4 class="govuk-heading-s">
-                          Percentage of pupils achieving the higher standard
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-reading-hi-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving greater depth in reading
                           <a class="icon-more-info-help " href="#help-ks1-reading-achieving-greater-depth" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
-                      </h4>
+                      </h3>
                       <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
                       <div class="school-chart" id="chart-ks1-reading-hi-std-table">
                           <svg width="680" height="162">
@@ -347,7 +212,7 @@ ASP - Key stage 2
                                   <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
                                 </g>
                             </g>
-                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the higher standard</text>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving greater depth in reading</text>
                             <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
                                 <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
                             </g>
@@ -368,9 +233,9 @@ ASP - Key stage 2
                             </g>
                           </svg>
                       </div>
-                      <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button> 
+                      <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>    
                       <table class="ks1-reading-hi-std-data asp-chart-table govuk-table u-printHidden" id="ks1-reading-hi-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-reading-achieving-greater-depth" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving greater depth in reading" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
-                          <caption class="govuk-visually-hidden">Percentage of pupils achieving the higher standard</caption>
+                          <caption class="govuk-visually-hidden">Percentage achieving greater depth in reading data for Shotton Hall Primary School</caption>
                           <thead class="govuk-table__head">
                             <tr class="govuk-table__row">
                                 <td class="govuk-table__cell"></td>
@@ -381,28 +246,21 @@ ASP - Key stage 2
                           </thead>
                           <tbody class="govuk-table__body">
                             <tr class="govuk-table__row">
-                                <th scope="row" class="govuk-table__header">Percentage of pupils achieving the higher standard</th>
+                                <th scope="row" class="govuk-table__header">Percentage achieving greater depth in reading</th>
                                 <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">31%</td>
                                 <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">16%</td>
                                 <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">18%</td>
                             </tr>
                           </tbody>
                       </table>
-                      
-                      <div class="explore"> 
-                        <button class="govuk-button link" id="">Explore reading, writing and maths combined data in detail</button>   
-                      </div>
                     </div>
 
 
                     <div class="score-section" id="ks1-summary-writing-exp-std">
-                        <h3 class="govuk-heading-m">
-                            Average scaled score in:
-                        </h3>
-                        <h4 class="govuk-heading-s">
-                          Reading
-                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
-                        </h4>
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving the expected standard or higher in writing
+                          <a class="icon-more-info-help " href="#help-ks1-writing-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
                       <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
                       <div class="school-chart" id="chart-ks1-writing-exp-std-table">
                           <svg width="680" height="162">
@@ -425,7 +283,7 @@ ASP - Key stage 2
                                   <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
                                 </g>
                             </g>
-                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Average scaled score in reading</text>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the expected standard or higher in writing</text>
                             <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
                                 <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
                             </g>
@@ -448,7 +306,7 @@ ASP - Key stage 2
                       </div>
                       <button class="govuk-button link" id="ks1-writing-exp-std-table-link">View as table</button>
                       <table class="ks1-writing-exp-std-data asp-chart-table govuk-table u-printHidden" id="ks1-writing-exp-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-writing-achieving-expected-standard" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving the expected standard or higher in writing" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
-                          <caption class="govuk-visually-hidden">Average scaled score in reading</caption>
+                          <caption class="govuk-visually-hidden">Percentage achieving the expected standard or higher in writing data for Shotton Hall Primary School</caption>
                           <thead class="govuk-table__head">
                             <tr class="govuk-table__row">
                                 <td class="govuk-table__cell"></td>
@@ -459,18 +317,21 @@ ASP - Key stage 2
                           </thead>
                           <tbody class="govuk-table__body">
                             <tr class="govuk-table__row">
-                                <th scope="row" class="govuk-table__header">Average scaled score in reading</th>
+                                <th scope="row" class="govuk-table__header">Percentage achieving the expected standard or higher in writing</th>
                                 <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">63%</td>
                                 <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">58%</td>
                                 <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">58%</td>
                             </tr>
                           </tbody>
                       </table>
-                      <br/><br/>
-                      <h4 class="govuk-heading-s">
-                          Maths
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-writing-hi-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving greater depth in writing
                           <a class="icon-more-info-help " href="#help-ks1-writing-achieving-greater-depth" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
-                      </h4>
+                      </h3>
                       <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
                       <div class="school-chart" id="chart-ks1-writing-hi-std-table">
                           <svg width="680" height="162">
@@ -493,7 +354,7 @@ ASP - Key stage 2
                                   <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
                                 </g>
                             </g>
-                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Average scaled score in maths</text>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving greater depth in writing</text>
                             <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
                                 <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
                             </g>
@@ -514,9 +375,9 @@ ASP - Key stage 2
                             </g>
                           </svg>
                       </div>
-                      <button class="govuk-button link" id="ks1-writing-hi-std-table-link">View as table</button>
+                      <button class="govuk-button link" id="ks1-writing-hi-std-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>    
                       <table class="ks1-writing-hi-std-data asp-chart-table govuk-table u-printHidden" id="ks1-writing-hi-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-writing-achieving-greater-depth" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving greater depth in writing" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
-                          <caption class="govuk-visually-hidden">Average scaled score in maths</caption>
+                          <caption class="govuk-visually-hidden">Percentage achieving greater depth in writing data for Shotton Hall Primary School</caption>
                           <thead class="govuk-table__head">
                             <tr class="govuk-table__row">
                                 <td class="govuk-table__cell"></td>
@@ -527,17 +388,156 @@ ASP - Key stage 2
                           </thead>
                           <tbody class="govuk-table__body">
                             <tr class="govuk-table__row">
-                                <th scope="row" class="govuk-table__header">Average scaled score in maths</th>
+                                <th scope="row" class="govuk-table__header">Percentage achieving greater depth in writing</th>
                                 <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">16%</td>
                                 <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">7%</td>
                                 <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">8%</td>
                             </tr>
                           </tbody>
                       </table>
-                      <div class="explore"> 
-                        <button class="govuk-button link" id="">Explore average scaled score data in detail</button>   
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-maths-exp-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving the expected standard or higher in maths
+                          <a class="icon-more-info-help " href="#help-ks1-maths-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-maths-exp-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="301.81818181818176" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="252.77272727272725" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="256.5454545454545" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="309.81818181818176" y="16">80%</text>
+                                <text class="value-label" x="260.77272727272725" y="40">67%</text>
+                                <text class="value-label" x="264.5454545454545" y="64">68%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the expected standard or higher in maths</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
                       </div>
-                    </div>                    
+                      <button class="govuk-button link" id="ks1-maths-exp-std-table-link">View as table</button>
+                      <table class="ks1-maths-exp-std-data asp-chart-table govuk-table u-printHidden" id="ks1-maths-exp-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-maths-achieving-expected-standard" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving the expected standard or higher in maths" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving the expected standard or higher in maths data for Shotton Hall Primary School</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving the expected standard or higher in maths</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">80%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">67%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">68%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-maths-hi-std">
+                      <h3 class="govuk-heading-m">
+                          Percentage achieving greater depth in maths
+                          <a class="icon-more-info-help " href="#help-ks1-maths-achieving-greater-depth" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-maths-hi-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="139.59090909090907" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="49.04545454545454" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="56.590909090909086" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="147.59090909090907" y="16">37%</text>
+                                <text class="value-label" x="57.04545454545454" y="40">13%</text>
+                                <text class="value-label" x="64.5909090909091" y="64">15%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving greater depth in maths</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="currentColor" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-maths-hi-std-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>    
+                      <table class="ks1-maths-hi-std-data asp-chart-table govuk-table u-printHidden" id="ks1-maths-hi-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-maths-achieving-greater-depth" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving greater depth in maths" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving greater depth in maths data for Shotton Hall Primary School</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving greater depth in maths</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">37%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">13%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">15%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
                 </div>
               </div>
           </div>

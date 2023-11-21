@@ -11,7 +11,7 @@
   <ul class="app-navigation__list app-width-container">
     <li><a href="home.html"><strong>Home</strong></a></li>
     <li class="active"><a href="my-school.html"><strong>My school</strong></a></li>
-    <li><a href="search.html"><strong>Search</strong></a></li>
+    <!-- <li><a href="search.html"><strong>Search</strong></a></li> -->
     <li><a href="#"><strong>Download data</strong></a></li>
     <li><a href="#"><strong>Site news</strong></a></li>
     <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
@@ -35,8 +35,83 @@
       <h1 class="govuk-heading-xl">
         My school
       </h1>
+      <h2 id="school-name-heading" class="govuk-heading-l">Secondary school name <span class="urn">(URN: 000000)</span></h2>
 
-      <div class="govuk-notification-banner" role="region"
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <details class="govuk-details asp-school-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                <span class="asp-details-closed-text">Show</span>
+                <span class="asp-details-open-text">Hide</span>
+                school details
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Detail type</th>
+                    <th scope="col" class="govuk-table__header">School details</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Address</td>
+                    <td class="govuk-table__cell">Address Line 1, Town/City, Post Code</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">School type</td>
+                    <td class="govuk-table__cell">Community school</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Education phase</td>
+                    <td class="govuk-table__cell">Secondary</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Gender of entry</td>
+                    <td class="govuk-table__cell">Mixed</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Ofsted rating</td>
+                    <td class="govuk-table__cell">2 Good | Ofsted report | Inspected 23 October 2019</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Local authority</td>
+                    <td class="govuk-table__cell">County Durham</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Headteacher / Principal</td>
+                    <td class="govuk-table__cell">Mr Joe Bloggs</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Age range</td>
+                    <td class="govuk-table__cell">11 to 16</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Religious character</td>
+                    <td class="govuk-table__cell">Does not apply</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Admissions policy</td>
+                    <td class="govuk-table__cell">Not applicable</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">SEN unit or resourced provision</td>
+                    <td class="govuk-table__cell">Not recorded</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Number of pupils</td>
+                    <td class="govuk-table__cell">345</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- <div class="govuk-notification-banner" role="region"
         aria-labelledby="govuk-notification-banner-title"
         data-module="govuk-notification-banner">
         <div class="govuk-notification-banner__header">
@@ -50,27 +125,9 @@
             LA boundary change
           </p>
         </div>
-      </div>
+      </div> -->
 
       <div class="dfe-grid-container">
-        <div class="dfe-card">
-          <div class="dfe-card-container">
-            <h2>
-              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="mtc.html">Multiplication table check (MTC)</a>
-            </h2>
-            <p>Identify pupils who have not yet mastered their times tables, so that additional support can be provided.</p>
-          </div>
-        </div>
-        
-        <div class="dfe-card">
-          <div class="dfe-card-container">
-            <h2>
-              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="key-stage-2.html">Key stage 2</a>
-            </h2>
-            <p>See data for key stage 2 including performance measures and additional reports in reading, writing, maths &amp; science.</p>
-          </div>
-        </div>
-
         <div class="dfe-card">
           <div class="dfe-card-container">
             <h2>
@@ -88,7 +145,7 @@
             <p>See data for key stage 4 including performance measures and additional reports in reading, writing, maths &amp; science.</p>
           </div>
         </div>
-        
+
         <div class="dfe-card">
           <div class="dfe-card-container">
             <h2>

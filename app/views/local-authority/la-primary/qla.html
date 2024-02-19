@@ -1,0 +1,831 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  ASP - My School
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="../home.html"><strong>Home</strong></a></li>
+    <li><a href="../my-la.html"><strong>My local authority</strong></a></li>
+    <li class="active"><a href="../my-school.html"><strong>My schools</strong></a></li>
+    <li><a href="../search.html"><strong>Search</strong></a></li>
+    <li><a href="#"><strong>Download data</strong></a></li>
+    <li><a href="#"><strong>Site news</strong></a></li>
+    <li><a href="../release-timetable.html"><strong>Release timetable</strong></a></li>
+    <li><a href="../guidance.html"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+    </span>
+  </p>
+</div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../my-school.html">My schools</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../my-school-primary.html">A Primary School</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    Question level analysis
+   </li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-xl">Question level analysis</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">Primary school name <span class="urn">(URN: 000000)</span></h2>
+
+<nav class="sub-navigation" aria-label="Sub navigation">
+   <ul class="sub-navigation__list">
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="phonics.html">Phonics</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="key-stage-1.html">Key stage 1</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link"  href="mtc.html">Multiplication table check</a>
+      </li>
+      <li class="sub-navigation__item">
+        <a class="sub-navigation__link" href="key-stage-2.html">Key stage 2</a>
+     </li>
+     <li class="sub-navigation__item">
+      <a class="sub-navigation__link" aria-current="page" href="qla.html"><strong>Question level analysis</strong></a>
+   </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="other-reports.html">Other reports</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="useful-links.html">Useful links</a>
+      </li>
+   </ul>
+</nav>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper main-asp">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third side-nav">
+          <nav class="side-navigation" aria-label="Side navigation">
+            <ul class="side-navigation__list">
+              <li class="side-navigation__item side-navigation__item--active">
+                  <a href="#1" aria-current="location">Year 6</a>
+              </li>
+            </ul>
+        </nav>
+        </div>
+        <!--TABS-->
+        <div class="govuk-grid-column-two-thirds">
+          <div class="page-content js-content-target">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <h2 class="govuk-heading-l">Year 6</h2>
+              </div>
+              <div class="govuk-grid-column-one-half download-to-pdf">
+                <button class="govuk-button" data-module="govuk-button">
+                  Download PDF to print or save
+                </button>
+              </div>
+            </div>
+
+
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                  
+                    <div class="data-message-container">
+                      <p>This section allows you to assess how your pupils performed in the key stage 2 tests by subject strand, by question and by individual pupils and compare these with the national average.</p>
+                      <p>This is QLA 2022/2023 data.</p>
+                    </div>
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                          Reading
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Based on the cohort of 75 pupils</p>
+                      <div class="vertical-qla-chart qla-chart" id="chart-qla-READING" data-key="READINGResults" data-orientation="vertical" data-helps="2a:H2848,2b:H2849,2c:H2850,2d:H2851,2e:H2852,2f:H2853,2g:H3132,2h:H3133,total:H2847">
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <svg width="780" height="500">
+                           <g transform="translate(0, 40)" class="bars-container">
+                              <rect class="chart-bar" width="20" y="123.04761904761904" x="108.33333333333334" data-score="71" data-national="63" height="256.95238095238096" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="104.95238095238096" x="225.00000000000003" data-score="76" data-national="68" height="275.04761904761904" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="191.8095238095238" x="341.6666666666667" data-score="52" data-national="39" height="188.1904761904762" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="141.14285714285714" x="458.3333333333333" data-score="66" data-national="57" height="238.85714285714286" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="57.904761904761926" x="575.0000000000001" data-score="89" data-national="71" height="322.0952380952381" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="126.66666666666669" x="691.6666666666667" data-score="70" data-national="61" height="253.33333333333331" style="fill: rgb(213, 56, 128);"></rect>
+                              <text class="bar-label" text-anchor="middle" y="400" x="116.33333333333334">2a</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="233.00000000000003">2b</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="349.6666666666667">2c</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="466.3333333333333">2d</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="583.0000000000001">2f</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="699.6666666666667">Total</text>
+                              <g class="chart-help-icon-wrap" transform="translate(116.33333333333334, 420)" href="#H2848">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(233.00000000000003, 420)" href="#H2849">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(349.6666666666667, 420)" href="#H2850">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(466.3333333333333, 420)" href="#H2851">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(583.0000000000001, 420)" href="#H2853">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(699.6666666666667, 420)" href="#H2847">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                           <g transform="translate(0, 40)" class="nationals-container">
+                              <rect width="20" y="147" x="108.33333333333334" height="8" style="fill: #3e4549; stroke: rgb(255, 255, 255); stroke-width: 1;"></rect>
+                              <rect width="20" y="128.9047619047619" x="225.00000000000003" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="233.8571428571429" x="341.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="168.71428571428572" x="458.3333333333333" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="118.04761904761904" x="575.0000000000001" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="154.2380952380952" x="691.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                           </g>
+                           <g transform="translate(60, 0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                              <path class="domain" stroke="currentColor" d="M0,420.5H0.5V40.5H0"></path>
+                              <g class="tick" opacity="1" transform="translate(0,420.5)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">0%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,239.54761904761907)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">50%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,58.59523809523813)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">100%</text>
+                              </g>
+                           </g>
+                           <g transform="translate(60 , 420)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                              <path class="domain" stroke="currentColor" d="M0.5,0V0.5H700.5V0"></path>
+                           </g>
+                           <text text-anchor="middle" transform="translate(406,496)" class="axis-label axis-label-x">Strand</text>
+                           <g class="qla-legend-container" transform="translate(8, 8)">
+                              <path fill="#d53880" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(0, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(14, 6)">Correct response</text>
+                              <path fill="#6f777b" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(166, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(180, 6)">National</text>
+                              <path fill="#bfc1c3" class="u-printHidden" d="M0,-9.611245656539017L8.323582900575634,4.805622828269509L-8.323582900575634,4.805622828269509Z" transform="translate(280,2)"></path>
+                              <text style="font-size:14px" text-anchor="start" class="u-printHidden" transform="translate(292, 6)">Marks available</text>
+                              <g class="chart-help-icon-wrap" transform="translate(132,2)" href="#H2844">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(246,2)" href="#H2845">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(398,2)" href="#H2843">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" id="ks1-reading-hi-std-table-link" style="margin-left:20px">View data by question</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View data by pupil</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View test paper</button>  
+                    </div>
+
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                        English grammar and punctuation
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Based on the cohort of 75 pupils</p>
+                      <div class="vertical-qla-chart qla-chart" id="chart-qla-READING" data-key="READINGResults" data-orientation="vertical" data-helps="2a:H2848,2b:H2849,2c:H2850,2d:H2851,2e:H2852,2f:H2853,2g:H3132,2h:H3133,total:H2847">
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <svg width="780" height="500">
+                           <g transform="translate(0, 40)" class="bars-container">
+                              <rect class="chart-bar" width="20" y="123.04761904761904" x="108.33333333333334" data-score="71" data-national="63" height="256.95238095238096" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="104.95238095238096" x="225.00000000000003" data-score="76" data-national="68" height="275.04761904761904" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="191.8095238095238" x="341.6666666666667" data-score="52" data-national="39" height="188.1904761904762" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="141.14285714285714" x="458.3333333333333" data-score="66" data-national="57" height="238.85714285714286" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="57.904761904761926" x="575.0000000000001" data-score="89" data-national="71" height="322.0952380952381" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="126.66666666666669" x="691.6666666666667" data-score="70" data-national="61" height="253.33333333333331" style="fill: rgb(213, 56, 128);"></rect>
+                              <text class="bar-label" text-anchor="middle" y="400" x="116.33333333333334">2a</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="233.00000000000003">2b</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="349.6666666666667">2c</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="466.3333333333333">2d</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="583.0000000000001">2f</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="699.6666666666667">Total</text>
+                              <g class="chart-help-icon-wrap" transform="translate(116.33333333333334, 420)" href="#H2848">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(233.00000000000003, 420)" href="#H2849">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(349.6666666666667, 420)" href="#H2850">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(466.3333333333333, 420)" href="#H2851">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(583.0000000000001, 420)" href="#H2853">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(699.6666666666667, 420)" href="#H2847">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                           <g transform="translate(0, 40)" class="nationals-container">
+                              <rect width="20" y="147" x="108.33333333333334" height="8" style="fill: #3e4549; stroke: rgb(255, 255, 255); stroke-width: 1;"></rect>
+                              <rect width="20" y="128.9047619047619" x="225.00000000000003" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="233.8571428571429" x="341.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="168.71428571428572" x="458.3333333333333" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="118.04761904761904" x="575.0000000000001" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="154.2380952380952" x="691.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                           </g>
+                           <g transform="translate(60, 0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                              <path class="domain" stroke="currentColor" d="M0,420.5H0.5V40.5H0"></path>
+                              <g class="tick" opacity="1" transform="translate(0,420.5)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">0%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,239.54761904761907)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">50%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,58.59523809523813)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">100%</text>
+                              </g>
+                           </g>
+                           <g transform="translate(60 , 420)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                              <path class="domain" stroke="currentColor" d="M0.5,0V0.5H700.5V0"></path>
+                           </g>
+                           <text text-anchor="middle" transform="translate(406,496)" class="axis-label axis-label-x">Strand</text>
+                           <g class="qla-legend-container" transform="translate(8, 8)">
+                              <path fill="#d53880" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(0, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(14, 6)">Correct response</text>
+                              <path fill="#6f777b" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(166, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(180, 6)">National</text>
+                              <path fill="#bfc1c3" class="u-printHidden" d="M0,-9.611245656539017L8.323582900575634,4.805622828269509L-8.323582900575634,4.805622828269509Z" transform="translate(280,2)"></path>
+                              <text style="font-size:14px" text-anchor="start" class="u-printHidden" transform="translate(292, 6)">Marks available</text>
+                              <g class="chart-help-icon-wrap" transform="translate(132,2)" href="#H2844">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(246,2)" href="#H2845">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(398,2)" href="#H2843">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" id="ks1-reading-hi-std-table-link" style="margin-left:20px">View data by question</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View data by pupil</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View test paper</button>  
+                    </div>
+
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                        Spelling only
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Based on the cohort of 75 pupils</p>
+                      <div class="vertical-qla-chart qla-chart" id="chart-qla-READING" data-key="READINGResults" data-orientation="vertical" data-helps="2a:H2848,2b:H2849,2c:H2850,2d:H2851,2e:H2852,2f:H2853,2g:H3132,2h:H3133,total:H2847">
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <svg width="780" height="500">
+                           <g transform="translate(0, 40)" class="bars-container">
+                              <rect class="chart-bar" width="20" y="123.04761904761904" x="108.33333333333334" data-score="71" data-national="63" height="256.95238095238096" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="104.95238095238096" x="225.00000000000003" data-score="76" data-national="68" height="275.04761904761904" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="191.8095238095238" x="341.6666666666667" data-score="52" data-national="39" height="188.1904761904762" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="141.14285714285714" x="458.3333333333333" data-score="66" data-national="57" height="238.85714285714286" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="57.904761904761926" x="575.0000000000001" data-score="89" data-national="71" height="322.0952380952381" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="126.66666666666669" x="691.6666666666667" data-score="70" data-national="61" height="253.33333333333331" style="fill: rgb(213, 56, 128);"></rect>
+                              <text class="bar-label" text-anchor="middle" y="400" x="116.33333333333334">2a</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="233.00000000000003">2b</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="349.6666666666667">2c</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="466.3333333333333">2d</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="583.0000000000001">2f</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="699.6666666666667">Total</text>
+                              <g class="chart-help-icon-wrap" transform="translate(116.33333333333334, 420)" href="#H2848">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(233.00000000000003, 420)" href="#H2849">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(349.6666666666667, 420)" href="#H2850">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(466.3333333333333, 420)" href="#H2851">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(583.0000000000001, 420)" href="#H2853">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(699.6666666666667, 420)" href="#H2847">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                           <g transform="translate(0, 40)" class="nationals-container">
+                              <rect width="20" y="147" x="108.33333333333334" height="8" style="fill: #3e4549; stroke: rgb(255, 255, 255); stroke-width: 1;"></rect>
+                              <rect width="20" y="128.9047619047619" x="225.00000000000003" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="233.8571428571429" x="341.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="168.71428571428572" x="458.3333333333333" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="118.04761904761904" x="575.0000000000001" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="154.2380952380952" x="691.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                           </g>
+                           <g transform="translate(60, 0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                              <path class="domain" stroke="currentColor" d="M0,420.5H0.5V40.5H0"></path>
+                              <g class="tick" opacity="1" transform="translate(0,420.5)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">0%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,239.54761904761907)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">50%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,58.59523809523813)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">100%</text>
+                              </g>
+                           </g>
+                           <g transform="translate(60 , 420)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                              <path class="domain" stroke="currentColor" d="M0.5,0V0.5H700.5V0"></path>
+                           </g>
+                           <text text-anchor="middle" transform="translate(406,496)" class="axis-label axis-label-x">Strand</text>
+                           <g class="qla-legend-container" transform="translate(8, 8)">
+                              <path fill="#d53880" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(0, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(14, 6)">Correct response</text>
+                              <path fill="#6f777b" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(166, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(180, 6)">National</text>
+                              <path fill="#bfc1c3" class="u-printHidden" d="M0,-9.611245656539017L8.323582900575634,4.805622828269509L-8.323582900575634,4.805622828269509Z" transform="translate(280,2)"></path>
+                              <text style="font-size:14px" text-anchor="start" class="u-printHidden" transform="translate(292, 6)">Marks available</text>
+                              <g class="chart-help-icon-wrap" transform="translate(132,2)" href="#H2844">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(246,2)" href="#H2845">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(398,2)" href="#H2843">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" id="ks1-reading-hi-std-table-link" style="margin-left:20px">View data by question</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View data by pupil</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View test paper</button>  
+                    </div>
+                   
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                        Maths all papers combined
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Based on the cohort of 75 pupils</p>
+                      <div class="vertical-qla-chart qla-chart" id="chart-qla-READING" data-key="READINGResults" data-orientation="vertical" data-helps="2a:H2848,2b:H2849,2c:H2850,2d:H2851,2e:H2852,2f:H2853,2g:H3132,2h:H3133,total:H2847">
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <svg width="780" height="500">
+                           <g transform="translate(0, 40)" class="bars-container">
+                              <rect class="chart-bar" width="20" y="123.04761904761904" x="108.33333333333334" data-score="71" data-national="63" height="256.95238095238096" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="104.95238095238096" x="225.00000000000003" data-score="76" data-national="68" height="275.04761904761904" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="191.8095238095238" x="341.6666666666667" data-score="52" data-national="39" height="188.1904761904762" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="141.14285714285714" x="458.3333333333333" data-score="66" data-national="57" height="238.85714285714286" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="57.904761904761926" x="575.0000000000001" data-score="89" data-national="71" height="322.0952380952381" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="126.66666666666669" x="691.6666666666667" data-score="70" data-national="61" height="253.33333333333331" style="fill: rgb(213, 56, 128);"></rect>
+                              <text class="bar-label" text-anchor="middle" y="400" x="116.33333333333334">2a</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="233.00000000000003">2b</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="349.6666666666667">2c</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="466.3333333333333">2d</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="583.0000000000001">2f</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="699.6666666666667">Total</text>
+                              <g class="chart-help-icon-wrap" transform="translate(116.33333333333334, 420)" href="#H2848">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(233.00000000000003, 420)" href="#H2849">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(349.6666666666667, 420)" href="#H2850">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(466.3333333333333, 420)" href="#H2851">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(583.0000000000001, 420)" href="#H2853">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(699.6666666666667, 420)" href="#H2847">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                           <g transform="translate(0, 40)" class="nationals-container">
+                              <rect width="20" y="147" x="108.33333333333334" height="8" style="fill: #3e4549; stroke: rgb(255, 255, 255); stroke-width: 1;"></rect>
+                              <rect width="20" y="128.9047619047619" x="225.00000000000003" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="233.8571428571429" x="341.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="168.71428571428572" x="458.3333333333333" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="118.04761904761904" x="575.0000000000001" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="154.2380952380952" x="691.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                           </g>
+                           <g transform="translate(60, 0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                              <path class="domain" stroke="currentColor" d="M0,420.5H0.5V40.5H0"></path>
+                              <g class="tick" opacity="1" transform="translate(0,420.5)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">0%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,239.54761904761907)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">50%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,58.59523809523813)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">100%</text>
+                              </g>
+                           </g>
+                           <g transform="translate(60 , 420)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                              <path class="domain" stroke="currentColor" d="M0.5,0V0.5H700.5V0"></path>
+                           </g>
+                           <text text-anchor="middle" transform="translate(406,496)" class="axis-label axis-label-x">Strand</text>
+                           <g class="qla-legend-container" transform="translate(8, 8)">
+                              <path fill="#d53880" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(0, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(14, 6)">Correct response</text>
+                              <path fill="#6f777b" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(166, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(180, 6)">National</text>
+                              <path fill="#bfc1c3" class="u-printHidden" d="M0,-9.611245656539017L8.323582900575634,4.805622828269509L-8.323582900575634,4.805622828269509Z" transform="translate(280,2)"></path>
+                              <text style="font-size:14px" text-anchor="start" class="u-printHidden" transform="translate(292, 6)">Marks available</text>
+                              <g class="chart-help-icon-wrap" transform="translate(132,2)" href="#H2844">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(246,2)" href="#H2845">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(398,2)" href="#H2843">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" id="ks1-reading-hi-std-table-link" style="margin-left:20px">View data by question</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View data by pupil</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View test paper</button>  
+                    </div>
+
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                        Maths paper 1
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Based on the cohort of 75 pupils</p>
+                      <div class="vertical-qla-chart qla-chart" id="chart-qla-READING" data-key="READINGResults" data-orientation="vertical" data-helps="2a:H2848,2b:H2849,2c:H2850,2d:H2851,2e:H2852,2f:H2853,2g:H3132,2h:H3133,total:H2847">
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <svg width="780" height="500">
+                           <g transform="translate(0, 40)" class="bars-container">
+                              <rect class="chart-bar" width="20" y="123.04761904761904" x="108.33333333333334" data-score="71" data-national="63" height="256.95238095238096" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="104.95238095238096" x="225.00000000000003" data-score="76" data-national="68" height="275.04761904761904" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="191.8095238095238" x="341.6666666666667" data-score="52" data-national="39" height="188.1904761904762" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="141.14285714285714" x="458.3333333333333" data-score="66" data-national="57" height="238.85714285714286" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="57.904761904761926" x="575.0000000000001" data-score="89" data-national="71" height="322.0952380952381" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="126.66666666666669" x="691.6666666666667" data-score="70" data-national="61" height="253.33333333333331" style="fill: rgb(213, 56, 128);"></rect>
+                              <text class="bar-label" text-anchor="middle" y="400" x="116.33333333333334">2a</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="233.00000000000003">2b</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="349.6666666666667">2c</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="466.3333333333333">2d</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="583.0000000000001">2f</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="699.6666666666667">Total</text>
+                              <g class="chart-help-icon-wrap" transform="translate(116.33333333333334, 420)" href="#H2848">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(233.00000000000003, 420)" href="#H2849">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(349.6666666666667, 420)" href="#H2850">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(466.3333333333333, 420)" href="#H2851">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(583.0000000000001, 420)" href="#H2853">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(699.6666666666667, 420)" href="#H2847">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                           <g transform="translate(0, 40)" class="nationals-container">
+                              <rect width="20" y="147" x="108.33333333333334" height="8" style="fill: #3e4549; stroke: rgb(255, 255, 255); stroke-width: 1;"></rect>
+                              <rect width="20" y="128.9047619047619" x="225.00000000000003" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="233.8571428571429" x="341.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="168.71428571428572" x="458.3333333333333" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="118.04761904761904" x="575.0000000000001" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="154.2380952380952" x="691.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                           </g>
+                           <g transform="translate(60, 0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                              <path class="domain" stroke="currentColor" d="M0,420.5H0.5V40.5H0"></path>
+                              <g class="tick" opacity="1" transform="translate(0,420.5)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">0%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,239.54761904761907)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">50%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,58.59523809523813)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">100%</text>
+                              </g>
+                           </g>
+                           <g transform="translate(60 , 420)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                              <path class="domain" stroke="currentColor" d="M0.5,0V0.5H700.5V0"></path>
+                           </g>
+                           <text text-anchor="middle" transform="translate(406,496)" class="axis-label axis-label-x">Strand</text>
+                           <g class="qla-legend-container" transform="translate(8, 8)">
+                              <path fill="#d53880" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(0, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(14, 6)">Correct response</text>
+                              <path fill="#6f777b" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(166, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(180, 6)">National</text>
+                              <path fill="#bfc1c3" class="u-printHidden" d="M0,-9.611245656539017L8.323582900575634,4.805622828269509L-8.323582900575634,4.805622828269509Z" transform="translate(280,2)"></path>
+                              <text style="font-size:14px" text-anchor="start" class="u-printHidden" transform="translate(292, 6)">Marks available</text>
+                              <g class="chart-help-icon-wrap" transform="translate(132,2)" href="#H2844">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(246,2)" href="#H2845">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(398,2)" href="#H2843">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" id="ks1-reading-hi-std-table-link" style="margin-left:20px">View data by question</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View data by pupil</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View test paper</button>  
+                    </div>
+
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                        Maths paper 2
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Based on the cohort of 75 pupils</p>
+                      <div class="vertical-qla-chart qla-chart" id="chart-qla-READING" data-key="READINGResults" data-orientation="vertical" data-helps="2a:H2848,2b:H2849,2c:H2850,2d:H2851,2e:H2852,2f:H2853,2g:H3132,2h:H3133,total:H2847">
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <svg width="780" height="500">
+                           <g transform="translate(0, 40)" class="bars-container">
+                              <rect class="chart-bar" width="20" y="123.04761904761904" x="108.33333333333334" data-score="71" data-national="63" height="256.95238095238096" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="104.95238095238096" x="225.00000000000003" data-score="76" data-national="68" height="275.04761904761904" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="191.8095238095238" x="341.6666666666667" data-score="52" data-national="39" height="188.1904761904762" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="141.14285714285714" x="458.3333333333333" data-score="66" data-national="57" height="238.85714285714286" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="57.904761904761926" x="575.0000000000001" data-score="89" data-national="71" height="322.0952380952381" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="126.66666666666669" x="691.6666666666667" data-score="70" data-national="61" height="253.33333333333331" style="fill: rgb(213, 56, 128);"></rect>
+                              <text class="bar-label" text-anchor="middle" y="400" x="116.33333333333334">2a</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="233.00000000000003">2b</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="349.6666666666667">2c</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="466.3333333333333">2d</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="583.0000000000001">2f</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="699.6666666666667">Total</text>
+                              <g class="chart-help-icon-wrap" transform="translate(116.33333333333334, 420)" href="#H2848">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(233.00000000000003, 420)" href="#H2849">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(349.6666666666667, 420)" href="#H2850">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(466.3333333333333, 420)" href="#H2851">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(583.0000000000001, 420)" href="#H2853">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(699.6666666666667, 420)" href="#H2847">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                           <g transform="translate(0, 40)" class="nationals-container">
+                              <rect width="20" y="147" x="108.33333333333334" height="8" style="fill: #3e4549; stroke: rgb(255, 255, 255); stroke-width: 1;"></rect>
+                              <rect width="20" y="128.9047619047619" x="225.00000000000003" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="233.8571428571429" x="341.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="168.71428571428572" x="458.3333333333333" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="118.04761904761904" x="575.0000000000001" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="154.2380952380952" x="691.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                           </g>
+                           <g transform="translate(60, 0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                              <path class="domain" stroke="currentColor" d="M0,420.5H0.5V40.5H0"></path>
+                              <g class="tick" opacity="1" transform="translate(0,420.5)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">0%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,239.54761904761907)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">50%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,58.59523809523813)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">100%</text>
+                              </g>
+                           </g>
+                           <g transform="translate(60 , 420)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                              <path class="domain" stroke="currentColor" d="M0.5,0V0.5H700.5V0"></path>
+                           </g>
+                           <text text-anchor="middle" transform="translate(406,496)" class="axis-label axis-label-x">Strand</text>
+                           <g class="qla-legend-container" transform="translate(8, 8)">
+                              <path fill="#d53880" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(0, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(14, 6)">Correct response</text>
+                              <path fill="#6f777b" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(166, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(180, 6)">National</text>
+                              <path fill="#bfc1c3" class="u-printHidden" d="M0,-9.611245656539017L8.323582900575634,4.805622828269509L-8.323582900575634,4.805622828269509Z" transform="translate(280,2)"></path>
+                              <text style="font-size:14px" text-anchor="start" class="u-printHidden" transform="translate(292, 6)">Marks available</text>
+                              <g class="chart-help-icon-wrap" transform="translate(132,2)" href="#H2844">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(246,2)" href="#H2845">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(398,2)" href="#H2843">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" id="ks1-reading-hi-std-table-link" style="margin-left:20px">View data by question</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View data by pupil</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View test paper</button>  
+                    </div>
+
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                        Maths paper 3
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Based on the cohort of 75 pupils</p>
+                      <div class="vertical-qla-chart qla-chart" id="chart-qla-READING" data-key="READINGResults" data-orientation="vertical" data-helps="2a:H2848,2b:H2849,2c:H2850,2d:H2851,2e:H2852,2f:H2853,2g:H3132,2h:H3133,total:H2847">
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <div class="qla-chart-tooltip" style="top: 135.048px; left: 84.3333px; display: none;"><span class="qtt-school">71%</span><span class="qtt-national">63%</span><span class="qtt-marks">9</span></div>
+                        <svg width="780" height="500">
+                           <g transform="translate(0, 40)" class="bars-container">
+                              <rect class="chart-bar" width="20" y="123.04761904761904" x="108.33333333333334" data-score="71" data-national="63" height="256.95238095238096" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="104.95238095238096" x="225.00000000000003" data-score="76" data-national="68" height="275.04761904761904" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="191.8095238095238" x="341.6666666666667" data-score="52" data-national="39" height="188.1904761904762" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="141.14285714285714" x="458.3333333333333" data-score="66" data-national="57" height="238.85714285714286" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="57.904761904761926" x="575.0000000000001" data-score="89" data-national="71" height="322.0952380952381" style="fill: rgb(213, 56, 128);"></rect>
+                              <rect class="chart-bar" width="20" y="126.66666666666669" x="691.6666666666667" data-score="70" data-national="61" height="253.33333333333331" style="fill: rgb(213, 56, 128);"></rect>
+                              <text class="bar-label" text-anchor="middle" y="400" x="116.33333333333334">2a</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="233.00000000000003">2b</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="349.6666666666667">2c</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="466.3333333333333">2d</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="583.0000000000001">2f</text>
+                              <text class="bar-label" text-anchor="middle" y="400" x="699.6666666666667">Total</text>
+                              <g class="chart-help-icon-wrap" transform="translate(116.33333333333334, 420)" href="#H2848">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(233.00000000000003, 420)" href="#H2849">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(349.6666666666667, 420)" href="#H2850">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(466.3333333333333, 420)" href="#H2851">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(583.0000000000001, 420)" href="#H2853">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(699.6666666666667, 420)" href="#H2847">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                           <g transform="translate(0, 40)" class="nationals-container">
+                              <rect width="20" y="147" x="108.33333333333334" height="8" style="fill: #3e4549; stroke: rgb(255, 255, 255); stroke-width: 1;"></rect>
+                              <rect width="20" y="128.9047619047619" x="225.00000000000003" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="233.8571428571429" x="341.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="168.71428571428572" x="458.3333333333333" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="118.04761904761904" x="575.0000000000001" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                              <rect width="20" y="154.2380952380952" x="691.6666666666667" height="8" style="fill: #3e4549;stroke: rgb(255, 255, 255);stroke-width: 1;"></rect>
+                           </g>
+                           <g transform="translate(60, 0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                              <path class="domain" stroke="currentColor" d="M0,420.5H0.5V40.5H0"></path>
+                              <g class="tick" opacity="1" transform="translate(0,420.5)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">0%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,239.54761904761907)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">50%</text>
+                              </g>
+                              <g class="tick" opacity="1" transform="translate(0,58.59523809523813)">
+                                 <line stroke="currentColor" x2="-6"></line>
+                                 <text fill="currentColor" x="-9" dy="0.32em">100%</text>
+                              </g>
+                           </g>
+                           <g transform="translate(60 , 420)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                              <path class="domain" stroke="currentColor" d="M0.5,0V0.5H700.5V0"></path>
+                           </g>
+                           <text text-anchor="middle" transform="translate(406,496)" class="axis-label axis-label-x">Strand</text>
+                           <g class="qla-legend-container" transform="translate(8, 8)">
+                              <path fill="#d53880" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(0, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(14, 6)">Correct response</text>
+                              <path fill="#6f777b" d="M-7.0710678118654755,-7.0710678118654755h14.142135623730951v14.142135623730951h-14.142135623730951Z" transform="translate(166, 0)"></path>
+                              <text style="font-size:14px" text-anchor="start" transform="translate(180, 6)">National</text>
+                              <path fill="#bfc1c3" class="u-printHidden" d="M0,-9.611245656539017L8.323582900575634,4.805622828269509L-8.323582900575634,4.805622828269509Z" transform="translate(280,2)"></path>
+                              <text style="font-size:14px" text-anchor="start" class="u-printHidden" transform="translate(292, 6)">Marks available</text>
+                              <g class="chart-help-icon-wrap" transform="translate(132,2)" href="#H2844">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(246,2)" href="#H2845">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                              <g class="chart-help-icon-wrap" transform="translate(398,2)" href="#H2843">
+                                 <path class="chart-help-icon" d="M9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,-9.772050238058398,0A9.772050238058398,9.772050238058398,0,1,1,9.772050238058398,0" style="fill: rgb(213, 232, 243);"></path>
+                                 <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" id="ks1-reading-hi-std-table-link" style="margin-left:20px">View data by question</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View data by pupil</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">View test paper</button>  
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!--END OF TABS-->
+      </div>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text govuk-body-s">
+            Help us improve Analyse School Performance
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+        </div>
+      </details>
+  </main>
+</div>
+{% endblock %}

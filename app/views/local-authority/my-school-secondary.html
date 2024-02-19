@@ -1,0 +1,207 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  ASP - My School
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="home.html"><strong>Home</strong></a></li>
+    <li><a href="my-la.html"><strong>My local authority</strong></a></li>
+    <li class="active"><a href="my-school.html"><strong>My schools</strong></a></li>
+    <li><a href="search.html"><strong>Search</strong></a></li>
+    <li><a href="#"><strong>Download data</strong></a></li>
+    <li><a href="#"><strong>Site news</strong></a></li>
+    <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
+    <li><a href="guidance.html"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+    </span>
+  </p>
+</div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="my-school.html">My schools</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    A Secondary School
+   </li>
+  </ol>
+</div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        My schools
+      </h1>
+      <h2 id="school-name-heading" class="govuk-heading-m">Secondary school name <span class="urn">(URN: 000000)</span></h2>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <details class="govuk-details asp-school-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                <span class="asp-details-closed-text">Show</span>
+                <span class="asp-details-open-text">Hide</span>
+                school details
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Detail type</th>
+                    <th scope="col" class="govuk-table__header">School details</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Address</td>
+                    <td class="govuk-table__cell">Address Line 1, Town/City, Post Code</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">School type</td>
+                    <td class="govuk-table__cell">Community school</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Education phase</td>
+                    <td class="govuk-table__cell">Primary</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Gender of entry</td>
+                    <td class="govuk-table__cell">Mixed</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Ofsted rating</td>
+                    <td class="govuk-table__cell">2 Good | Ofsted report | Inspected 23 October 2019</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Local authority</td>
+                    <td class="govuk-table__cell">County Durham</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Headteacher / Principal</td>
+                    <td class="govuk-table__cell">Mr Joe Bloggs</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Age range</td>
+                    <td class="govuk-table__cell">4 to 11</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Religious character</td>
+                    <td class="govuk-table__cell">Does not apply</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Admissions policy</td>
+                    <td class="govuk-table__cell">Not applicable</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">SEN unit or resourced provision</td>
+                    <td class="govuk-table__cell">Not recorded</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Number of pupils</td>
+                    <td class="govuk-table__cell">345</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- <div class="govuk-notification-banner" role="region"
+        aria-labelledby="govuk-notification-banner-title"
+        data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            Use 2021/22 school performance data with caution<br/><br/>
+            LA boundary change
+          </p>
+        </div>
+      </div> -->
+
+      <div class="dfe-grid-container">
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="la-secondary/qla.html">Question level analysis (QLA)</a>
+            </h2>
+            <p>Assess how pupils performed in the key stage 2 tests and compare these with the national average.</p>
+          </div>
+        </div>
+        
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="la-secondary/key-stage-4.html">Key stage 4</a>
+            </h2>
+            <p>See data for key stage 4 including performance measures and additional reports in reading, writing, maths &amp; science.</p>
+          </div>
+        </div>
+
+        <!-- <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="useful-links.html">Scatter plots</a>
+            </h2>
+            <p>View scatterplots to understand individual child data and compare to the national average.</p>
+          </div>
+        </div> -->
+
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="la-secondary/other-reports.html">Other reports</a>
+            </h2>
+            <p>View reports on school performance, Ofsted inspections, asbence and exclusions and school characteristics.</p>
+          </div>
+        </div>
+
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="la-secondary/useful-links.html">Useful links</a>
+            </h2>
+            <p>View links to other services and published documents that may be useful.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text govuk-body-s">
+        Help us improve Analyse School Performance
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+        <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+        <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+        <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+        <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+    </div>
+  </details>
+</div>
+
+{% endblock %}

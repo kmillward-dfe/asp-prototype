@@ -71,7 +71,7 @@ $govuk-assets-path: '/govuk/assets/';
     }
 }
 .govuk-table.asp-report-table {
-    border-top: 1px solid #b1b4b6;
+    border: 1px solid #b1b4b6;
     font-size: 13px;
     &.bigger {
         font-size: 16px;
@@ -80,6 +80,32 @@ $govuk-assets-path: '/govuk/assets/';
       border-right: 1px solid #b1b4b6;  
       border-left: 1px solid #b1b4b6; 
       padding: 10px;
+    }
+    &.stickytable {
+        border-collapse: separate;
+        border-spacing: 0;
+        border-width: 0.75px;
+        border-color: #b1b4b6;
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: #fff;
+            tr:last-child:after {
+                content: '';
+                display: block;
+                border-bottom: 3px solid #b1b4b6;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -1px;
+            }
+        }  
+        tr, th, td {
+            border-width: 0.5px;
+            border-style: solid;
+            border-color: #b1b4b6;
+        }
     } 
 }
 .govuk-checkboxes--small .govuk-checkboxes__label {
@@ -547,7 +573,8 @@ h1 {
 .main-asp {
     padding-top: 0;
     .govuk-grid-column-two-thirds.bigtable {
-            overflow-x:auto;
+        //overflow-x:auto;
+        
     }
     .govuk-grid-column-one-third.measures {
         h3 {

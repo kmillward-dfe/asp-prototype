@@ -39,10 +39,30 @@
       <a class="govuk-breadcrumbs__link" href="my-la.html">My local authority</a>
    </li>
    <li class="govuk-breadcrumbs__list-item">
-    Download
+    <a class="govuk-breadcrumbs__link" href="individual-school-data.html">Download</a>
+ </li>
+   <li class="govuk-breadcrumbs__list-item">
+    Download school search
  </li>
   </ol>
 </div>
+
+<h1 class="govuk-heading-xl">Key stage 4</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">All schools in local authority</h2>
+
+<nav class="sub-navigation" aria-label="Sub navigation">
+  <ul class="sub-navigation__list">
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" href="my-la-ks2.html">Key stage 2</a>
+    </li>
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" href="my-la-ks4.html">Key stage 4</a>
+    </li>
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" aria-current="page" href="la-download.html"><strong>Download</strong></a>
+    </li>
+  </ul>
+</nav>
 
 
 <div class="govuk-width-container">
@@ -56,7 +76,6 @@
                   </li>
                 </ul>
             </nav>
-            <h2 class="govuk-heading-s">Additional download data</h2>
             <nav class="side-navigation" aria-label="Side navigation">
               <ul class="side-navigation__list">
                   <li class="side-navigation__item side-navigation__item--active">
@@ -71,14 +90,10 @@
           <div class="govuk-grid-row">
           <span class="govuk-caption-l">Individual school data</span><h1 class="govuk-heading-l">Select schools data to download</h1>
                
-                <p class="govuk-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam arcu, pretium et eleifend sit amet, sollicitudin in nulla.  </p>
-  
-                
-
                 
                 <div class="awesomplete ">
                   <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
-                    Enter a school name, URN or LAESTAB number
+                    Enter a school name, address, URN or LAESTAB number
                   </legend>
                   <input id="FindByNameId" class="govuk-input govuk-!-width-three-quarters" name="nameId" type="text" maxlength="100" data-suggestion-url="/schoolsearch/suggest" autocomplete="off" aria-expanded="false" aria-owns="awesomplete_list_1" role="combobox">
                   <ul hidden="" role="listbox" id="awesomplete_list_1"></ul>

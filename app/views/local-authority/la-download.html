@@ -38,10 +38,30 @@
       <a class="govuk-breadcrumbs__link" href="my-la.html">My local authority</a>
    </li>
    <li class="govuk-breadcrumbs__list-item">
-    Download
+    <a class="govuk-breadcrumbs__link" href="la-download.html">Download</a>
+ </li>
+   <li class="govuk-breadcrumbs__list-item">
+    Dates
  </li>
   </ol>
 </div>
+
+<h1 class="govuk-heading-xl">Key stage 4</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">All schools in local authority</h2>
+
+<nav class="sub-navigation" aria-label="Sub navigation">
+  <ul class="sub-navigation__list">
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" href="my-la-ks2.html">Key stage 2</a>
+    </li>
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" href="my-la-ks4.html">Key stage 4</a>
+    </li>
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" aria-current="page" href="la-download.html"><strong>Download</strong></a>
+    </li>
+  </ul>
+</nav>
 
 
 <div class="govuk-width-container">
@@ -55,7 +75,6 @@
                   </li>
                 </ul>
             </nav>
-            <h2 class="govuk-heading-s">Additional download data</h2>
             <nav class="side-navigation" aria-label="Side navigation">
               <ul class="side-navigation__list">
                   <li class="side-navigation__item">
@@ -74,38 +93,42 @@
                 <span class="govuk-caption-l">Pupil level and aggregated LA data</span><h1 class="govuk-heading-l">Dates available for download</h1>
   
                 <div class="govuk-form-group">
-                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                    <div id="waste-hint" class="govuk-hint">
-                      Select all that apply.
+                  <fieldset class="govuk-fieldset" aria-describedby="signIn-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      
+                    </legend>
+                    <div id="signIn-hint" class="govuk-hint">
+                      Select one option
                     </div>
-                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    <div class="govuk-radios" data-module="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="signIn" name="signIn" type="radio" value="government-gateway" aria-describedby="signIn-item-hint">
+                        <label class="govuk-label govuk-radios__label" for="signIn">
                           2022 to 2023
                         </label>
                       </div>
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="signIn-2" name="signIn" type="radio" value="govuk-one-login" aria-describedby="signIn-2-item-hint">
+                        <label class="govuk-label govuk-radios__label" for="signIn-2">
                           2021 to 2022
                         </label>
                       </div>
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                          2020 to 2019
-                        </label>
-                      </div>
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                          2019 to 2020
-                        </label>
-                      </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="signIn-2" name="signIn" type="radio" value="govuk-one-login" aria-describedby="signIn-2-item-hint">
+                      <label class="govuk-label govuk-radios__label" for="signIn-2">
+                        2020 to 2021
+                      </label>
                     </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="signIn-2" name="signIn" type="radio" value="govuk-one-login" aria-describedby="signIn-2-item-hint">
+                      <label class="govuk-label govuk-radios__label" for="signIn-2">
+                        2019 to 2020
+                      </label>
+                    </div>
+                  </div>
+                  </div>
                   </fieldset>
-                </div>
+                
   
                 <a href="download-pupil-file.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
                   Continue

@@ -13,7 +13,6 @@
     <li class="active"><a href="my-la.html"><strong>My local authority</strong></a></li>
     <li><a href="my-school.html"><strong>My schools</strong></a></li>
     <li><a href="search.html"><strong>Search</strong></a></li>
-   
     <li><a href="#"><strong>Site news</strong></a></li>
     <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
     <li><a href="guidance.html"><strong>Guidance</strong></a></li>
@@ -39,16 +38,16 @@
       <a class="govuk-breadcrumbs__link" href="my-la.html">My local authority</a>
    </li>
    <li class="govuk-breadcrumbs__list-item">
-    <a class="govuk-breadcrumbs__link" href="individual-school-data.html">Download</a>
+    <a class="govuk-breadcrumbs__link" href="la-download.html">Download</a>
  </li>
    <li class="govuk-breadcrumbs__list-item">
-    Download school search
+    Data download
  </li>
   </ol>
 </div>
 
-<h1 class="govuk-heading-xl">Data download</h1>
-<h2 id="school-name-heading" class="govuk-heading-m">Individual school data</h2>
+<h1 class="govuk-heading-xl">Key stage 4</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">All schools in local authority</h2>
 
 <nav class="sub-navigation" aria-label="Sub navigation">
   <ul class="sub-navigation__list">
@@ -71,42 +70,67 @@
           <div class="govuk-grid-column-one-third side-nav">
             <nav class="side-navigation" aria-label="Side navigation">
                 <ul class="side-navigation__list">
-                  <li class="side-navigation__item ">
-                    <a href="la-download.html">Pupil level and aggregated LA data</a>
+                  <li class="side-navigation__item side-navigation__item--active">
+                      <a href="la-download.html" aria-current="location">Pupil level and aggregated LA data</a>
                   </li>
                 </ul>
             </nav>
+           
             <nav class="side-navigation" aria-label="Side navigation">
               <ul class="side-navigation__list">
-                  <li class="side-navigation__item side-navigation__item--active">
-                    <a href="individual-school-data.html" aria-current="location">Individual school data</a>
+                  <li class="side-navigation__item">
+                      <a href="individual-school-data.html">Individual school data </a>
                   </li>
                 </ul>
             </nav>
           </div>
         <!--TABS-->
 
-        <div class="govuk-grid-column-two-thirds">
-          <div class="govuk-grid-row">
-          <span class="govuk-caption-l">Individual school data</span><h1 class="govuk-heading-l">Select schools data to download</h1>
+        <div class="govuk-grid-column-two-thirds"
+              <div class="govuk-grid-row">
+             
                
-                
-                <div class="awesomplete ">
-                  <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
-                    Enter a school name, address, URN or LAESTAB number
-                  </legend>
-                  <input id="FindByNameId" class="govuk-input govuk-!-width-three-quarters" name="nameId" type="text" maxlength="100" data-suggestion-url="/schoolsearch/suggest" autocomplete="off" aria-expanded="false" aria-owns="awesomplete_list_1" role="combobox">
-                  <ul hidden="" role="listbox" id="awesomplete_list_1"></ul>
+  
+                <span class="govuk-caption-l">Pupil level and aggregated LA data</span><h1 class="govuk-heading-l">Dates available for download</h1>
+  
+                <p class="govuk-body">You can download your requested data in CSV, XLSX or TXT format.</p>
+
+                <p class="govuk-body">The data included in your download is the pupil level / aggregated data for your LA.</p>
+  
+              <ul class="govuk-list govuk-!-font-size-16 asp-downloads--file-type">
+              <li>
+              <img src="/public/images/download-icon.png" alt="download icon" width="20" height="20">
+              <a id="download-format-csv-link" href="/Download/links/301/2023/csv?Token=WyIwMTEyMDIza3M0X2xhIl01" class="asp-icon-download">Data in CSV format</a>
+              <span class="asp-download-helptext">
+              (will download as a ZIP file; open the ZIP to access its contents)
+              </span>
+              </li>
+              <li>
+              <img src="/public/images/download-icon.png" alt="download icon" width="20" height="20">
+              <a id="download-format-xlsx-link" href="/Download/links/301/2023/xlsx?Token=WyIwMTEyMDIza3M0X2xhIl01" class="asp-icon-download">Data in XLSX format</a>
+              <span class="asp-download-helptext">
+              (will download as a ZIP file; open the ZIP to access its contents)
+              </span>
+              </li>
+              <li>
+              <img src="/public/images/download-icon.png" alt="download icon" width="20" height="20">
+              <a id="download-format-tsv-link" href="/Download/links/301/2023/tsv?Token=WyIwMTEyMDIza3M0X2xhIl01" class="asp-icon-download">Data in TXT format</a>
+              <span class="asp-download-helptext">
+              (will download as a ZIP file; open the ZIP to access its contents)
+              </span>
+              </li>
+              </ul>
+
+              <a href="la-download.html" role="button" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-top-4" data-module="govuk-button">
+                Download other dates
+              </a>
+       
+
+
+  
                 </div>
-                
-                
-                  <div class="govuk-!-padding-bottom-4"></div>
-                  <a href="download-date.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-                    Continue
-                  </a>
-                </div>
-</div>
-                </div>
+              </div>
+  
        
         <!--END OF TABS-->
       </div>

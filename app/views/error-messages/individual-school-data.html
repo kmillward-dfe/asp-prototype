@@ -1,0 +1,149 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  ASP - My Local Authority
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="home.html"><strong>Home</strong></a></li>
+    <li class="active"><a href="my-la.html"><strong>My local authority</strong></a></li>
+    <li><a href="my-school.html"><strong>My schools</strong></a></li>
+    <li><a href="search.html"><strong>Search</strong></a></li>
+   
+    <li><a href="#"><strong>Site news</strong></a></li>
+    <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
+    <li><a href="guidance.html"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+    </span>
+  </p>
+</div>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="my-la.html">My local authority</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="individual-school-data.html">Download</a>
+ </li>
+   <li class="govuk-breadcrumbs__list-item">
+    Download school search
+ </li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-xl">Data download</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">Individual school data</h2>
+
+<div class="govuk-error-summary" data-module="govuk-error-summary">
+  <div role="alert">
+    <h2 class="govuk-error-summary__title">
+      There is a problem
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#">Enter a school name, address, URN or LAESTAB number  </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<nav class="sub-navigation" aria-label="Sub navigation">
+  <ul class="sub-navigation__list">
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" href="my-la-ks2.html">Key stage 2</a>
+    </li>
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" href="my-la-ks4.html">Key stage 4</a>
+    </li>
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" aria-current="page" href="la-download.html"><strong>Download</strong></a>
+    </li>
+  </ul>
+</nav>
+
+
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper main-asp">
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third side-nav">
+            <nav class="side-navigation" aria-label="Side navigation">
+                <ul class="side-navigation__list">
+                  <li class="side-navigation__item ">
+                    <a href="la-download.html">Pupil level and aggregated LA data</a>
+                  </li>
+                </ul>
+            </nav>
+            <nav class="side-navigation" aria-label="Side navigation">
+              <ul class="side-navigation__list">
+                  <li class="side-navigation__item side-navigation__item--active">
+                    <a href="individual-school-data.html" aria-current="location">Individual school data</a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+        <!--TABS-->
+
+        <div class="govuk-grid-column-two-thirds">
+          <div class="govuk-grid-row">
+          <span class="govuk-caption-l">Individual school data</span><h1 class="govuk-heading-l">Select schools data to download</h1>
+               
+                
+          <div class="govuk-form-group govuk-form-group--error">
+                  <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
+                    Enter a school name, address, URN or LAESTAB number
+                  </legend>
+                  <p id="whereDoYouLive-error" class="govuk-error-message">
+                    <span class="govuk-visually-hidden">Error:</span> Please enter a school name, address, URN or LAESTAB number
+                  </p>
+                  <input id="FindByNameId" class="govuk-input govuk-!-width-three-quarters" name="nameId" type="text" maxlength="100" data-suggestion-url="/schoolsearch/suggest" autocomplete="off" aria-expanded="false" aria-owns="awesomplete_list_1" role="combobox">
+                  <ul hidden="" role="listbox" id="awesomplete_list_1"></ul>
+                </div>
+                
+                
+                  <div class="govuk-!-padding-bottom-4"></div>
+                  <a href="download-date.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+                    Continue
+                  </a>
+                </div>
+</div>
+                </div>
+       
+        <!--END OF TABS-->
+      </div>
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text govuk-body-s">
+            Help us improve Analyse School Performance
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+        </div>
+      </details>
+  </main>
+</div>
+
+{% endblock %}

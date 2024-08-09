@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block pageTitle %}
-ASP - Key stage 1
+ASP - QLA
 {% endblock %}
 {% block content %}
 <nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
@@ -9,7 +9,6 @@ ASP - Key stage 1
       <li><a href="home.html"><strong>Home</strong></a></li>
       <li class="active"><a href="my-school.html"><strong>My school</strong></a></li>
       <!-- <li><a href="search.html"><strong>Search</strong></a></li> -->
-      
       <li><a href="#"><strong>Site news</strong></a></li>
       <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
       <li><a href="guidance.html"><strong>Guidance</strong></a></li>
@@ -36,8 +35,8 @@ ASP - Key stage 1
          <a class="govuk-breadcrumbs__link" href="my-school.html">My school</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="download.html"> Download data</a>
-      </li>
+        <a class="govuk-breadcrumbs__link" href="download.html">Download data</a>
+     </li>
       <li class="govuk-breadcrumbs__list-item">
         Data files available for download
       </li>
@@ -45,25 +44,16 @@ ASP - Key stage 1
 </div>
 
 <h1 class="govuk-heading-xl">Download data</h1>
-<h2 id="school-name-heading" class="govuk-heading-m">Primary school name <span class="urn">(URN: 000000)</span></h2>
+<h2 id="school-name-heading" class="govuk-heading-m">Secondary school name <span class="urn">(URN: 000000)</span></h2>
 
 <nav class="sub-navigation" aria-label="Sub navigation">
    <ul class="sub-navigation__list">
       <li class="sub-navigation__item">
-         <a class="sub-navigation__link" href="phonics.html">Phonics</a>
-      </li>
-      <li class="sub-navigation__item">
-        <a class="sub-navigation__link" href="mtc.html">Key stage 1</a>
-     </li>
-      <li class="sub-navigation__item">
-         <a class="sub-navigation__link" href="mtc.html">Multiplication table check</a>
-      </li>
-      <li class="sub-navigation__item">
-        <a class="sub-navigation__link" href="key-stage-2.html">Key stage 2</a>
-     </li>
-     <li class="sub-navigation__item">
         <a class="sub-navigation__link" href="qla.html">Question level analysis</a>
-     </li>
+      </li>
+      <li class="sub-navigation__item">
+        <a class="sub-navigation__link" href="key-stage-4.html">Key stage 4</a>
+      </li>
       <li class="sub-navigation__item">
          <a class="sub-navigation__link" href="other-reports.html">Other reports</a>
       </li>
@@ -71,8 +61,8 @@ ASP - Key stage 1
          <a class="sub-navigation__link" href="useful-links.html">Useful links</a>
       </li>
       <li class="sub-navigation__item">
-        <a class="sub-navigation__link" aria-current="page" href="key-stage-1.html"><strong>Download data</strong></a>
-     </li>
+        <a class="sub-navigation__link" aria-current="page" href="download"><strong>Download data</strong></a>
+      </li>
    </ul>
 </nav>
 
@@ -81,15 +71,13 @@ ASP - Key stage 1
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-third side-nav">
           <nav class="side-navigation" aria-label="Side navigation">
-              <ul class="side-navigation__list">
-                <li class="side-navigation__item side-navigation__item--active">
-                    <a href="download" aria-current="location">Primary school name data</a>
-                </li>
-              </ul>
-             
-          </nav>
+            <ul class="side-navigation__list">
+              <li class="side-navigation__item side-navigation__item--active">
+                  <a href="#1" aria-current="location">Secondary school name data</a>
+              </li>
+            </ul>
+        </nav>
         </div>
-        <!--TABS-->
         <div class="govuk-grid-column-two-thirds">
           <div class="page-content js-content-target">
             <div class="govuk-grid-row">
@@ -98,7 +86,7 @@ ASP - Key stage 1
           <div class="page-content js-content-target">
             <div class="govuk-grid-row"></div>
 
-        <span class="govuk-caption-l">Primary school name data</span><h1 class="govuk-heading-l">Data files available for download</h1>
+        <span class="govuk-caption-l">Secondary school name data</span><h1 class="govuk-heading-l">Data files available for download</h1>
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
@@ -204,21 +192,21 @@ ASP - Key stage 1
       
  
 
-      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text govuk-body-s">
-            Help us improve Analyse School Performance
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
-            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
-            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
-            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
-        </div>
-
-      </details>
-  </main>
-</div>
-{% endblock %}
+  
+        <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text govuk-body-s">
+              Help us improve Analyse School Performance
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+              <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+              <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+              <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+              <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+          </div>
+        </details>
+    </main>
+  </div>
+  {% endblock %}

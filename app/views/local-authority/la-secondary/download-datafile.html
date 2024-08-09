@@ -1,0 +1,217 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  ASP - My School
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="../home.html"><strong>Home</strong></a></li>
+    <li><a href="../my-la.html"><strong>My local authority</strong></a></li>
+    <li class="active"><a href="../my-school.html"><strong>My schools</strong></a></li>
+    <li><a href="../search.html"><strong>Search</strong></a></li>
+    <li><a href="#"><strong>Site news</strong></a></li>
+    <li><a href="../release-timetable.html"><strong>Release timetable</strong></a></li>
+    <li><a href="../guidance.html"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+    </span>
+  </p>
+</div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../my-school.html">My schools</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../my-school-secondary.html">A Secondary School</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="download.html">Download data</a>
+ </li>
+   <li class="govuk-breadcrumbs__list-item">
+   Data files available for download
+   </li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-xl">Download data</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">Secondary school name <span class="urn">(URN: 000000)</span></h2>
+
+<nav class="sub-navigation" aria-label="Sub navigation">
+  <ul class="sub-navigation__list">
+    <li class="sub-navigation__item">
+      <a class="sub-navigation__link" href="qla.html">Question level analysis</a>
+    </li>
+      <li class="sub-navigation__item">
+        <a class="sub-navigation__link"  href="key-stage-4.html">Key stage 4</a>
+     </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="other-reports.html">Other reports</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="useful-links.html">Useful links</a>
+      </li>
+      <li class="sub-navigation__item">
+        <a class="sub-navigation__link" aria-current="page" href="download.html"><strong>Download data</strong></a>
+     </li>
+   </ul>
+</nav>
+
+
+           <div class="govuk-width-container">
+            <main class="govuk-main-wrapper main-asp">
+              <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-third side-nav">
+                    <nav class="side-navigation" aria-label="Side navigation">
+                        <ul class="side-navigation__list">
+                          <li class="side-navigation__item side-navigation__item--active">
+                              <a href="download" aria-current="location">Secondary school name data</a>
+                          </li>
+                        </ul>
+                    </nav>
+                    
+                  </div>
+                  <!--TABS-->
+          
+                  <div class="govuk-grid-column-two-thirds">
+                    <div class="page-content js-content-target">
+                      <div class="govuk-grid-row">
+                          
+                        </div>
+                       
+                        <span class="govuk-caption-l">Secondary school name data</span><h1 class="govuk-heading-l">Data files available for download</h1>
+          
+                          <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                              <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
+                             
+                              </legend>
+                              <div id="waste-hint" class="govuk-hint govuk-!-padding-bottom-4">
+                                Select all that apply.
+                              </div>
+                              <legend class="govuk-fieldset__legend">
+                                  Key stage 4 (KS4)
+                              </legend>
+                              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                      KS4 LA (Revised) (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                      KS4 Destinations LA (Revised) (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <legend class="govuk-fieldset__legend govuk-!-padding-top-4">
+                                  Key stage 2 (KS2)
+                                </legend>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                  KS2 LA (Revised) (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                  KS2 Destinations LA (Revised) (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <legend class="govuk-fieldset__legend govuk-!-padding-top-4">
+                                  Key stage 1 (KS1)
+                                </legend>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                  KS1 LA (Provisional) (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <legend class="govuk-fieldset__legend govuk-!-padding-top-4">
+                                  QLA (year 6 and 7)
+                                </legend>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                  EGPS pupil data (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                  Maths paper 1 pupil (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                  Maths paper 2 pupil (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                  Maths paper 3 pupil (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                  Reading pupil (Analyse school performance) 
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                  Spelling pupil (Analyse school performance) 
+                                  </label>
+                                </div>
+                              
+                              </div>
+                            </fieldset>
+                          </div>
+          
+                          <div class="govuk-!-padding-top-4">
+                        <a href="download-link" role="button" draggable="false" class="govuk-button " data-module="govuk-button">
+                          Continue
+                        </a>
+                      </div>
+                        
+                    </div>
+                  </div>
+                
+                </div>
+          
+              
+                    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text govuk-body-s">
+                      Help us improve Analyse School Performance
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+                      <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+                      <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+                      <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+                      <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+                  </div>
+                </details>
+            </main>
+          </div>
+          {% endblock %}

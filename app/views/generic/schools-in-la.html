@@ -1,0 +1,238 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  ASP - My School
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="home.html"><strong>Home</strong></a></li>
+    <li><a href="la.html"><strong>All local authorities</strong></a></li>
+    <li class="active"><a href="schools.html"><strong>All schools</strong></a></li>
+    <li><a href="#"><strong>Site news</strong></a></li>
+    <li><a href="release-timetable.html"><strong>Release timetable</strong></a></li>
+    <li><a href="guidance.html"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+    </span>
+  </p>
+</div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="la.html">All local authorities</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="la-page.html">LA name</a>
+ </li>
+   <li class="govuk-breadcrumbs__list-item">
+    All schools
+   </li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        All schools
+      </h1>
+
+      <!-- <div class="govuk-notification-banner" role="region"
+        aria-labelledby="govuk-notification-banner-title"
+        data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            Use 2021/22 school performance data with caution<br/><br/>
+            LA boundary change
+          </p>
+        </div>
+      </div> -->
+
+      <h2 class="govuk-heading-m">Local authority name - 24 schools</h2>
+      
+      <div class="govuk-form-group search">
+        <label for="schoolSearchTerm" class="govuk-label asp-search-label govuk-body-s">
+          Enter school name, URN (Unique Reference Number) or LAESTAB (Local Authority Establishment Number)
+        </label>
+
+        <input class="govuk-input govuk-!-width-three-quarters asp-magnify-input " name="schoolSearchTerm" id="schoolSearchTerm" spellcheck="false">
+        <button id="LASearchSubmit" type="submit" class="govuk-button asp-magnify-button">
+            <span class="govuk-visually-hidden ">Search</span>
+        </button>
+      </div>
+
+      <ul class="la-list">
+        <li>
+          <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Primary School</h2>
+            <p>Address: Another Primary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Primary School</h2>
+            <p>Address: Another Primary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 00000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Primary School</h2>
+            <p>Address: Another Primary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Primary School</h2>
+            <p>Address: Another Primary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 00000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Primary School</h2>
+            <p>Address: Another Primary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Secondary School</h2>
+            <p>Address: Another Secondary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 00000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Secondary School</h2>
+            <p>Address: Another Secondary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Secondary School</h2>
+            <p>Address: Another Secondary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 00000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Secondary School</h2>
+            <p>Address: Another Secondary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 000000</p>
+          </a>
+        </li>
+        <li>
+            <a href="school-page.html">
+            <h3 class="govuk-heading-s">A Secondary School</h2>
+            <p>Address: Another Secondary School, County, AAA AAA</p>
+            <p>URN: 000000</p>
+            <p>LAESTAB: 00000000</p>
+          </a>
+        </li>
+        
+        <!-- <li><a href="my-school.html">School name 2</a></li>
+        <li><a href="my-school.html">School name 3</a></li>
+        <li><a href="my-school.html">School name 4</a></li>
+        <li><a href="my-school.html">School name 5</a></li>
+        <li><a href="my-school.html">School name 6</a></li>
+        <li><a href="my-school.html">School name 7</a></li>
+        <li><a href="my-school.html">School name 8</a></li>
+        <li><a href="my-school.html">School name 9</a></li>
+        <li><a href="my-school.html">School name 10</a></li>
+        <li><a href="my-school.html">School name 11</a></li>
+        <li><a href="my-school.html">School name 12</a></li>
+        <li><a href="my-school.html">School name 13</a></li>
+        <li><a href="my-school.html">School name 14</a></li>
+        <li><a href="my-school.html">School name 15</a></li>
+        <li><a href="my-school.html">School name 16</a></li>
+        <li><a href="my-school.html">School name 17</a></li>
+        <li><a href="my-school.html">School name 18</a></li>
+        <li><a href="my-school.html">School name 19</a></li>
+        <li><a href="my-school.html">School name 20</a></li>
+        <li><a href="my-school.html">School name 21</a></li>
+        <li><a href="my-school.html">School name 22</a></li>
+        <li><a href="my-school.html">School name 23</a></li>
+        <li><a href="my-school.html">School name 24</a></li>
+        <li><a href="my-school.html">School name 25</a></li>
+        <li><a href="my-school.html">School name 26</a></li>
+        <li><a href="my-school.html">School name 27</a></li>
+        <li><a href="my-school.html">School name 28</a></li>
+        <li><a href="my-school.html">School name 29</a></li>
+        <li><a href="my-school.html">School name 30</a></li> -->
+      </ul>
+
+      <nav class="govuk-pagination" role="navigation" aria-label="results">
+        <ul class="govuk-pagination__list">
+          <li class="govuk-pagination__item govuk-pagination__item--current">
+            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+              1
+            </a>
+          </li>
+          <li class="govuk-pagination__item">
+            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2" >
+              2
+            </a>
+          </li>
+          <li class="govuk-pagination__item">
+            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+              3
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-pagination__next">
+          <a class="govuk-link govuk-pagination__link" href="#" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+              <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text govuk-body-s">
+        Help us improve Analyse School Performance
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+        <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+        <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+        <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+        <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+    </div>
+  </details>
+</div>
+
+{% endblock %}

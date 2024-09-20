@@ -1,0 +1,122 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  ASP - My Local authority
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="home.html"><strong>Home</strong></a></li>
+    <li class="active"><a href="la.html"><strong>All local authorities</strong></a></li>
+    <li><a href="schools.html"><strong>All schools</strong></a></li>
+    <li><a href="#"><strong>Site news</strong></a></li>
+    <li><a href="#"><strong>Release timetable</strong></a></li>
+    <li><a href="#"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+    </span>
+  </p>
+</div>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="la.html"> All local authorities</a>
+      </li>
+    <li class="govuk-breadcrumbs__list-item">
+     Local authority name
+   </li>
+  </ol>
+</div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl"> Local authority name</h1>
+      <h2 id="school-name-heading" class="govuk-heading-m">All schools within *Local Authority*</h2>
+
+      <div class="govuk-notification-banner" role="region"
+        aria-labelledby="govuk-notification-banner-title"
+        data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            Use 2021/22 school performance data with caution<br/><br/>
+            LA boundary change
+          </p>
+        </div>
+      </div>
+
+      <div class="dfe-grid-container wider">
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">Key stage 2</a>
+            </h2>
+            <p>See headline measures for all schools within your local authority at key stage 2.</p>
+          </div>
+        </div>
+        
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">Key stage 4</a>
+            </h2>
+            <p>See headline measures for all schools within your local authority at key stage 4.</p>
+          </div>
+        </div>
+        
+        <div class="dfe-card">
+            <div class="dfe-card-container">
+              <h2>
+                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="schools-in-la.html">All schools</a>
+              </h2>
+              <p>All schools found in this LA.</p>
+            </div>
+          </div>
+
+        <div class="dfe-card">
+          <div class="dfe-card-container">
+            <h2>
+              <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">Download data</a>
+            </h2>
+            <p>Download data for Analyse school performance and Key to success</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text govuk-body-s">
+        Help us improve Analyse School Performance
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+        <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+        <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+        <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+        <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+    </div>
+  </details>
+</div>
+
+{% endblock %}

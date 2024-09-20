@@ -1,0 +1,698 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+ASP - Phonics
+{% endblock %}
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="home.html"><strong>Home</strong></a></li>
+    <li><a href="la.html"><strong>All local authorities</strong></a></li>
+    <li class="active"><a href="schools.html"><strong>All schools</strong></a></li>
+    <li><a href="#"><strong>Site news</strong></a></li>
+    <li><a href="#"><strong>Release timetable</strong></a></li>
+    <li><a href="#"><strong>Guidance</strong></a></li>
+  </ul>
+</nav>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. 
+    </span>
+  </p>
+</div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="schools.html">All schools</a>
+     </li>
+   <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="school-page-only.html">School name</a>
+ </li>
+   <li class="govuk-breadcrumbs__list-item">
+    Phonics
+   </li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-xl">Phonics</h1>
+<h2 id="school-name-heading" class="govuk-heading-m">Primary school name <span class="urn">(URN: 000000)</span></h2>
+
+<nav class="sub-navigation" aria-label="Sub navigation">
+   <ul class="sub-navigation__list">
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" aria-current="page" href="phonics-school.html"><strong>Phonics</strong></a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="#">Key stage 1</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="#">Multiplication table check</a>
+      </li>
+      <li class="sub-navigation__item">
+        <a class="sub-navigation__link" href="#">Key stage 2</a>
+     </li>
+     <li class="sub-navigation__item">
+      <a class="sub-navigation__link" href="#l">Question level analysis</a>
+   </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="#">Other reports</a>
+      </li>
+      <li class="sub-navigation__item">
+         <a class="sub-navigation__link" href="#">Useful links</a>
+      </li>
+   </ul>
+</nav>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper main-asp">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third side-nav">
+          <nav class="side-navigation" aria-label="Side navigation">
+              <ul class="side-navigation__list">
+                <li class="side-navigation__item side-navigation__item--active">
+                    <a href="#1" aria-current="location">Performance Measures</a>
+                </li>
+              </ul>
+          </nav>
+          <h2 class="govuk-heading-s">Additional reports</h2>
+           <nav class="side-navigation" aria-label="Side navigation">
+              <ul class="side-navigation__list">
+                <li class="side-navigation__item">
+                    <a href="#">Year 1 attainment</a>
+                </li>
+                <li class="side-navigation__item">
+                    <a href="#">Year 2 attainment</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <!--TABS-->
+        <div class="govuk-grid-column-two-thirds">
+          <div class="page-content js-content-target">
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <h2 class="govuk-heading-l">Performance Measures</h2>
+              </div>
+              <div class="govuk-grid-column-one-half download-to-pdf">
+                <button class="govuk-button" data-module="govuk-button">
+                  Download PDF to print or save
+                </button>
+              </div>
+            </div>
+
+
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                  
+                    <div class="data-message-container">
+                      <h2>Phonics year 1 screening check</h2>
+                      <p>This is provisional data for 2022/23.</p>
+                    </div>
+                    <div class="score-section" id="ks1-summary-reading-exp-std" style="position: relative;">
+                      <h3 class="govuk-heading-m">
+                        Percentage achieving the expected standard in phonics
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-reading-exp-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="286.7272727272727" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="245.2272727272727" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="252.77272727272725" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="294.7272727272727" y="16">76%</text>
+                                <text class="value-label" x="253.2272727272727" y="40">65%</text>
+                                <text class="value-label" x="260.77272727272725" y="64">67%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Percentage achieving the expected standard in year 1</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="#b1b4b6" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="#b1b4b6" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="#b1b4b6" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-reading-exp-std-table-link">View as table</button>    
+                      <table class="ks1-reading-exp-std-data asp-chart-table govuk-table u-printHidden" id="ks1-reading-exp-std-table" aria-hidden="true" style="position: relative;display:none;">
+                          <caption class="govuk-visually-hidden">Percentage achieving the expected standard in year 1</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Percentage achieving the expected standard in year 1</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">76%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">65%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">67%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-reading-hi-std">
+                      <h3 class="govuk-heading-m">
+                        Phonics average score
+                          <a class="icon-more-info-help " href="#help-ks1-reading-achieving-greater-depth" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <p class="cohort-size govuk-body-s">Number of pupils = 51</p>
+                      <div class="school-chart" id="chart-ks1-reading-hi-std-table">
+                          <svg width="680" height="162">
+                            <g transform="translate(235,20)" class="bars">
+                                <rect height="24" x="0.5" y="0" width="116.95454545454545" style="fill: #d53880;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="24" width="60.36363636363636" style="fill: #3e4549;stroke-width: 2px; stroke: white;"></rect>
+                                <rect height="24" x="0.5" y="48" width="67.90909090909089" style="fill: rgb(191, 193, 195);stroke-width: 2px; stroke: white;"></rect>
+                                <text class="school-value-label" x="124.95454545454545" y="16">31%</text>
+                                <text class="value-label" x="68.36363636363636" y="40">16%</text>
+                                <text class="value-label" x="75.90909090909089" y="64">18%</text>
+                                <text text-anchor="end" class="bar-y-label" x="-4" y="16">School</text>
+                                <text text-anchor="end" class="bar-y-label chart-la-average" x="-30" y="40">Local authority average</text>
+                                <text text-anchor="end" class="bar-y-label chart-national-average-text" x="-30" y="64">National average</text>
+                                <g transform="translate(-15,36)" class="H2645 chart-help-icon-wrap" href="#H2645">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                                <g transform="translate(-15,60)" class="H3042 chart-help-icon-wrap" href="#H3042">
+                                  <path class="chart-help-icon" d="M10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,-10.704744696916627,0A10.704744696916627,10.704744696916627,0,1,1,10.704744696916627,0" style="fill: rgb(213, 232, 243);"></path>
+                                  <text text-anchor="middle" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                                </g>
+                            </g>
+                            <text text-anchor="middle" transform="translate(356,158 )" class="axis-label axis-label-x">Average score in phonics</text>
+                            <g transform="translate(235,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,0.5H0.5V112.5H0"></path>
+                            </g>
+                            <g transform="translate(235, 112)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H415.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                                  <line stroke="#b1b4b6" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">0%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(189.1363636363636,0)">
+                                  <line stroke="#b1b4b6" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">50%</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(377.7727272727272,0)">
+                                  <line stroke="#b1b4b6" y2="6"></line>
+                                  <text fill="currentColor" y="9" dy="0.71em">100%</text>
+                                </g>
+                            </g>
+                          </svg>
+                      </div>
+                      <button class="govuk-button link" id="ks1-reading-hi-std-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>    
+                      <table class="ks1-reading-hi-std-data asp-chart-table govuk-table u-printHidden" id="ks1-reading-hi-std-table" data-is-disadvantaged="false" data-help-icon-target="help-ks1-reading-achieving-greater-depth" data-hide-national-average-help-icon="false" data-national-help-icon-target="" data-chart-help-target="H3042" data-chart-la-help="H2645" data-chart-colours="#d53880,#6f777b,#bfc1c3" data-chart-units="%" data-chart-xstops="0, 50, 100" data-x-labeltext="Percentage achieving greater depth in reading" data-decimal-places="0" data-bottom-padding="50" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Average score in phonics</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"></td>
+                                <th scope="col" class="govuk-table__header">School</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Local authority average</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">National average</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Average score in phonics</th>
+                                <td aria-label="School" class="govuk-table__cell govuk-table__cell--numeric">31%</td>
+                                <td aria-label="Local authority average" class="govuk-table__cell govuk-table__cell--numeric">16%</td>
+                                <td aria-label="National average" class="govuk-table__cell govuk-table__cell--numeric">18%</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="score-section" id="ks1-summary-writing-exp-std">
+                      <h3 class="govuk-heading-m">
+                         Attainment in phonics by mark
+                         <a class="icon-more-info-help " href="#help-ks1-writing-achieving-expected-standard" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                      </h3>
+                      <div id="qatarget-phonics-att-by-mark">
+                         <p class="govuk-body-s cohort-size">Number of pupils = 87</p>
+                         </a>
+                         <div class="asp-chart-legend">
+                            <ul class="legend-list govuk-list">
+                               <li class="school-legend">School</li>
+                            </ul>
+                         </div>
+                         <div id="chart-phonics-attainment-clusters-table" class="vertical-bar-chart">
+                            <svg width="680" height="400">
+                               <g class="grid-line" fill="none" font-size="10" font-family="sans-serif" text-anchor="end" transform="translate(90)">
+                                  <path class="domain" stroke="currentColor" d="M560,340.5H0.5V0.5H560"></path>
+                                  <g class="tick" opacity="1" transform="translate(0,340.5)">
+                                     <line stroke="#b1b4b6" x2="560"></line>
+                                     <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,297.5598636019197)">
+                                     <line stroke="#b1b4b6" x2="560"></line>
+                                     <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,254.61972720383937)">
+                                     <line stroke="#b1b4b6" x2="560"></line>
+                                     <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,211.67959080575903)">
+                                     <line stroke="#b1b4b6" x2="560"></line>
+                                     <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,168.73945440767872)">
+                                     <line stroke="#b1b4b6" x2="560"></line>
+                                     <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,125.79931800959841)">
+                                     <line stroke="#b1b4b6" x2="560"></line>
+                                     <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,82.85918161151807)">
+                                     <line stroke="#b1b4b6" x2="560"></line>
+                                     <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,39.919045213437755)">
+                                     <line stroke="#b1b4b6" x2="560"></line>
+                                     <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                  </g>
+                               </g>
+                               <g transform="translate(90,20)" class="bars">
+                                  <rect class="bar" x="34" width="24" y="315.70598636019196" height="4.294013639808043" style="fill: rgb(213, 56, 128);"></rect>
+                                  <rect class="bar" x="127.33333333333333" width="24" y="298.52993180095984" height="21.470068199040156" style="fill: rgb(213, 56, 128);"></rect>
+                                  <rect class="bar" x="220.66666666666666" width="24" y="311.4119727203839" height="8.588027279616085" style="fill: rgb(213, 56, 128);"></rect>
+                                  <rect class="bar" x="314" width="24" y="311.4119727203839" height="8.588027279616085" style="fill: rgb(213, 56, 128);"></rect>
+                                  <rect class="bar" x="407.3333333333333" width="24" y="307.11795908057593" height="12.882040919424071" style="fill: rgb(213, 56, 128);"></rect>
+                                  <rect class="bar" x="500.66666666666663" width="24" y="2.2429906542056415" height="317.75700934579436" style="fill: rgb(213, 56, 128);"></rect>
+                               </g>
+                               <text class="value-label" text-anchor="middle" x="135" y="327.70598636019196">1</text>
+                               <text class="value-label" text-anchor="middle" x="228.33333333333331" y="310.52993180095984">5</text>
+                               <text class="value-label" text-anchor="middle" x="321.66666666666663" y="323.4119727203839">2</text>
+                               <text class="value-label" text-anchor="middle" x="415" y="323.4119727203839">2</text>
+                               <text class="value-label" text-anchor="middle" x="508.3333333333333" y="319.11795908057593">3</text>
+                               <text class="value-label" text-anchor="middle" x="601.6666666666666" y="14.242990654205641">74</text>
+                               <text text-anchor="middle" transform="translate(356,396 )" class="axis-label axis-label-x">Marks in phonics check</text>
+                               <text text-anchor="start" class="axis-label axis-label-y" y="152" x="0">Number</text>
+                               <text text-anchor="start" class="axis-label axis-label-y" y="168" x="0">of</text>
+                               <text text-anchor="start" class="axis-label axis-label-y" y="184" x="0">pupils</text>
+                               <g transform="translate(90,0)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                  <path class="domain" stroke="currentColor" d="M0,340.5H0.5V0.5H0"></path>
+                                  <g class="tick" opacity="1" transform="translate(0,340.5)">
+                                     <line stroke="#b1b4b6" x2="-6"></line>
+                                     <text fill="currentColor" x="-9" dy="0.32em">0</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,297.5598636019197)">
+                                     <line stroke="#b1b4b6" x2="-6"></line>
+                                     <text fill="currentColor" x="-9" dy="0.32em">10</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,254.61972720383937)">
+                                     <line stroke="#b1b4b6" x2="-6"></line>
+                                     <text fill="currentColor" x="-9" dy="0.32em">20</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,211.67959080575903)">
+                                     <line stroke="#b1b4b6" x2="-6"></line>
+                                     <text fill="currentColor" x="-9" dy="0.32em">30</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,168.73945440767872)">
+                                     <line stroke="#b1b4b6" x2="-6"></line>
+                                     <text fill="currentColor" x="-9" dy="0.32em">40</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,125.79931800959841)">
+                                     <line stroke="#b1b4b6" x2="-6"></line>
+                                     <text fill="currentColor" x="-9" dy="0.32em">50</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,82.85918161151807)">
+                                     <line stroke="#b1b4b6" x2="-6"></line>
+                                     <text fill="currentColor" x="-9" dy="0.32em">60</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(0,39.919045213437755)">
+                                     <line stroke="#b1b4b6" x2="-6"></line>
+                                     <text fill="currentColor" x="-9" dy="0.32em">70</text>
+                                  </g>
+                               </g>
+                               <g transform="translate(90, 340)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                  <path class="domain" stroke="currentColor" d="M0.5,0V0.5H560.5V0"></path>
+                                  <g class="tick" opacity="1" transform="translate(46.666666666666664,0)">
+                                     <line stroke="#b1b4b6" y2="6"></line>
+                                     <text fill="currentColor" y="9" dy="0.71em">Not recorded</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(140,0)">
+                                     <line stroke="#b1b4b6" y2="6"></line>
+                                     <text fill="currentColor" y="9" dy="0.71em">0-7</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(233.33333333333331,0)">
+                                     <line stroke="#b1b4b6" y2="6"></line>
+                                     <text fill="currentColor" y="9" dy="0.71em">8-15</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(326.6666666666667,0)">
+                                     <line stroke="#b1b4b6" y2="6"></line>
+                                     <text fill="currentColor" y="9" dy="0.71em">16-23</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(420,0)">
+                                     <line stroke="#b1b4b6" y2="6"></line>
+                                     <text fill="currentColor" y="9" dy="0.71em">24-31</text>
+                                  </g>
+                                  <g class="tick" opacity="1" transform="translate(513.3333333333333,0)">
+                                     <line stroke="#b1b4b6" y2="6"></line>
+                                     <text fill="currentColor" y="9" dy="0.71em">32-40</text>
+                                  </g>
+                               </g>
+                            </svg>
+                         </div>
+                         <button class="govuk-button link" id="phonics-attainment-clusters-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>   
+                         <table class="govuk-table asp-chart-table u-printHidden" id="phonics-attainment-clusters-table" data-chart-colours="#d53880" data-chart-units="" data-chart-xstops="" data-y-labeltext="Number of pupils" data-x-labeltext="Marks in phonics check" data-display-bar-values="false" data-left-padding="90" data-bottom-padding="60" data-decimal-places="0" data-is-horizontal="false" data-chart-la-help="H2645" data-chart-help-target="#H3042" aria-hidden="true" style="display: none;">
+                            <caption class="govuk-visually-hidden">Pupils' attainment in phonics</caption>
+                            <thead class="govuk-table__head">
+                               <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell">&nbsp;</td>
+                                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">Not recorded</th>
+                                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">0-7 marks</th>
+                                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">8-15 marks</th>
+                                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">16-23 marks</th>
+                                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">24-31 marks</th>
+                                  <th scope="col" class="govuk-table__header govuk-table__header--numeric">32-40 marks</th>
+                               </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                               <tr class="govuk-table__row">
+                                  <th scope="row" class="govuk-table__header headline-measure">School</th>
+                                  <td aria-label="Not recorded" class="govuk-table__cell govuk-table__cell--numeric">1 pupil</td>
+                                  <td aria-label="0-7 marks" class="govuk-table__cell govuk-table__cell--numeric">5 pupils</td>
+                                  <td aria-label="8-15 marks" class="govuk-table__cell govuk-table__cell--numeric">2 pupils</td>
+                                  <td aria-label="16-23 marks" class="govuk-table__cell govuk-table__cell--numeric">2 pupils</td>
+                                  <td aria-label="24-31 marks" class="govuk-table__cell govuk-table__cell--numeric">3 pupils</td>
+                                  <td aria-label="32-40 marks" class="govuk-table__cell govuk-table__cell--numeric">74 pupils</td>
+                               </tr>
+                            </tbody>
+                         </table>
+                      </div>
+                    </div>
+
+
+                   <div class="score-section" id="ks1-summary-writing-hi-std">
+                    <h3 class="govuk-heading-m">
+                       Attainment in phonics by percentage
+                       <a class="icon-more-info-help " href="#help-ks1-writing-achieving-greater-depth" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                    </h3>
+                    <div id="qatarget-phonics-att-by-percentage">
+                       <p class="govuk-body-s cohort-size">Number of pupils = 87</p>
+                       <div class="asp-chart-legend">
+                          <ul class="legend-list govuk-list">
+                             <li class="school-legend">School</li>
+                             <li class="la-legend">
+                                <a class="icon-more-info-help " href="#H2645" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                Local authority average<br>(Lincolnshire)
+                             </li>
+                             <li class="national-legend">
+                                <a class="icon-more-info-help " href="#H3042" data-noxlsx="1"><span class="govuk-visually-hidden">What does this mean?</span></a>
+                                National average
+                             </li>
+                          </ul>
+                       </div>
+                       <div id="chart-phonics-attainment-by-percentage" class="vertical-bar-chart phonics-chart-container-vertical">
+                          <svg width="680" height="430">
+                             <g class="grid-line" fill="none" font-size="10" font-family="sans-serif" text-anchor="end" transform="translate(80, 20)">
+                                <path class="domain" stroke="currentColor" d="M570,340.5H0.5V0.5H570"></path>
+                                <g class="tick" opacity="1" transform="translate(0,340.5)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,307.49029126213594)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,274.4805825242719)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,241.47087378640776)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,208.4611650485437)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,175.45145631067962)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,142.44174757281556)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,109.43203883495144)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,76.42233009708741)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,43.412621359223294)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,10.402912621359235)">
+                                   <line stroke="#b1b4b6" x2="570"></line>
+                                   <text fill="currentColor" x="-3" dy="0.32em"></text>
+                                </g>
+                             </g>
+                             <g transform="translate(80, 20)" class="yaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                                <path class="domain" stroke="currentColor" d="M0,340.5H0.5V0.5H0"></path>
+                                <g class="tick" opacity="1" transform="translate(0,340.5)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">0</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,307.49029126213594)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">10</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,274.4805825242719)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">20</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,241.47087378640776)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">30</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,208.4611650485437)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">40</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,175.45145631067962)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">50</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,142.44174757281556)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">60</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,109.43203883495144)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">70</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,76.42233009708741)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">80</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,43.412621359223294)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">90</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(0,10.402912621359235)">
+                                   <line stroke="#b1b4b6" x2="-6"></line>
+                                   <text fill="currentColor" x="-9" dy="0.32em">100</text>
+                                </g>
+                             </g>
+                             <g transform="translate(80, 360)" class="xaxis axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+                                <path class="domain" stroke="currentColor" d="M0.5,0V0.5H570.5V0"></path>
+                                <g class="tick" opacity="1" transform="translate(47.5,0)">
+                                   <line stroke="#b1b4b6" y2="6"></line>
+                                   <text fill="currentColor" y="9" dy="0.71em">Not recorded</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(142.5,0)">
+                                   <line stroke="#b1b4b6" y2="6"></line>
+                                   <text fill="currentColor" y="9" dy="0.71em">0-7</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(237.5,0)">
+                                   <line stroke="#b1b4b6" y2="6"></line>
+                                   <text fill="currentColor" y="9" dy="0.71em">8-15</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(332.5,0)">
+                                   <line stroke="#b1b4b6" y2="6"></line>
+                                   <text fill="currentColor" y="9" dy="0.71em">16-23</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(427.5,0)">
+                                   <line stroke="#b1b4b6" y2="6"></line>
+                                   <text fill="currentColor" y="9" dy="0.71em">24-31</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(522.5,0)">
+                                   <line stroke="#b1b4b6" y2="6"></line>
+                                   <text fill="currentColor" y="9" dy="0.71em">32-40</text>
+                                </g>
+                             </g>
+                             <text text-anchor="start" transform="translate(0 ,-170)" class="axis-label axis-label-y" y="170" x="0">
+                                <tspan x="0" y="170" dy="14em">% of</tspan>
+                                <tspan x="0" y="170" dy="15.1em">pupils</tspan>
+                             </text>
+                             <text text-anchor="middle" transform="translate(365,410)" class="axis-label axis-label-x">Marks in phonics check</text>
+                             <g class="chart-help-icon-wrap" href="#H2998" transform="translate(455, 405)">
+                                <path class="chart-help-icon" href="#H2998" d="M11.283791670955125,0A11.283791670955125,11.283791670955125,0,1,1,-11.283791670955125,0A11.283791670955125,11.283791670955125,0,1,1,11.283791670955125,0" style="fill: rgb(213, 232, 243);"></path>
+                                <text text-anchor="middle" href="#H2998" transform="translate(0,6)" style="fill: rgb(0, 0, 0);">?</text>
+                             </g>
+                             <g transform="translate(80, 20)" class="bars">
+                                <rect class="bar" x="5" width="25" y="336.6990291262136" height="3.3009708737864116" fill="#d53880"></rect>
+                                <rect class="bar" x="100" width="25" y="320.19417475728153" height="19.80582524271847" fill="#d53880"></rect>
+                                <rect class="bar" x="195" width="25" y="333.3980582524272" height="6.601941747572823" fill="#d53880"></rect>
+                                <rect class="bar" x="290" width="25" y="333.3980582524272" height="6.601941747572823" fill="#d53880"></rect>
+                                <rect class="bar" x="385" width="25" y="330.09708737864077" height="9.902912621359235" fill="#d53880"></rect>
+                                <rect class="bar" x="480" width="25" y="59.41747572815535" height="280.58252427184465" fill="#d53880"></rect>
+                             </g>
+                             <g transform="translate(80, 20)" class="bar-labels">
+                                <text class="bar-label phonics-bar-label" transform="translate(6, 323.49514563106794)">1%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(101, 306.99029126213594)">6%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(196, 320.19417475728153)">2%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(291, 320.19417475728153)">2%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(386, 316.8932038834952)">3%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(481, 46.213592233009706)">85%</text>
+                             </g>
+                             <g transform="translate(80, 20)" class="bars">
+                                <rect class="bar" x="35" width="25" y="330.09708737864077" height="9.902912621359235" fill="#3e4549"></rect>
+                                <rect class="bar" x="130" width="25" y="323.49514563106794" height="16.504854368932058" fill="#3e4549"></rect>
+                                <rect class="bar" x="225" width="25" y="330.09708737864077" height="9.902912621359235" fill="#3e4549"></rect>
+                                <rect class="bar" x="320" width="25" y="323.49514563106794" height="16.504854368932058" fill="#3e4549"></rect>
+                                <rect class="bar" x="415" width="25" y="316.8932038834952" height="23.106796116504825" fill="#3e4549"></rect>
+                                <rect class="bar" x="510" width="25" y="85.82524271844659" height="254.1747572815534" fill="#3e4549"></rect>
+                             </g>
+                             <g transform="translate(80, 20)" class="bar-labels">
+                                <text class="bar-label phonics-bar-label" transform="translate(36, 316.8932038834952)">3%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(131, 310.29126213592235)">5%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(226, 316.8932038834952)">3%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(321, 310.29126213592235)">5%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(416, 303.68932038834953)">7%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(511, 72.621359223301)">77%</text>
+                             </g>
+                             <g transform="translate(80, 20)" class="bars">
+                                <rect class="bar" x="65" width="25" y="330.09708737864077" height="9.902912621359235" fill="#bfc1c3"></rect>
+                                <rect class="bar" x="160" width="25" y="323.49514563106794" height="16.504854368932058" fill="#bfc1c3"></rect>
+                                <rect class="bar" x="255" width="25" y="330.09708737864077" height="9.902912621359235" fill="#bfc1c3"></rect>
+                                <rect class="bar" x="350" width="25" y="326.79611650485435" height="13.203883495145647" fill="#bfc1c3"></rect>
+                                <rect class="bar" x="445" width="25" y="320.19417475728153" height="19.80582524271847" fill="#bfc1c3"></rect>
+                                <rect class="bar" x="540" width="25" y="79.22330097087377" height="260.77669902912623" fill="#bfc1c3"></rect>
+                             </g>
+                             <g transform="translate(80, 20)" class="bar-labels">
+                                <text class="bar-label phonics-bar-label" transform="translate(66, 316.8932038834952)">3%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(161, 310.29126213592235)">5%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(256, 316.8932038834952)">3%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(351, 313.59223300970876)">4%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(446, 306.99029126213594)">6%</text>
+                                <text class="bar-label phonics-bar-label" transform="translate(541, 66.01941747572818)">79%</text>
+                             </g>
+                          </svg>
+                       </div>
+                       <button class="govuk-button link" id="phonics-attainment-percentage-table-link">View as table</button>  <button class="govuk-button link" style="margin-left: 20px;" id="">Explore data in detail</button>   
+                       <table class="govuk-table asp-chart-table-phonics" id="phonics-attainment-percentage-table" aria-hidden="true" style="display: none;">
+                          <caption class="govuk-visually-hidden">Pupils' attainment % in phonics Bourne Abbey Church of England Primary Academy</caption>
+                          <thead class="govuk-table__head">
+                             <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">&nbsp;</td>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">Not recorded</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">0-7 marks</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">8-15 marks</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">16-23 marks</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">24-31 marks</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric">32-40 marks</th>
+                             </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                             <tr class="school-data govuk-table__row">
+                                <th scope="row" class="headline-measure govuk-table__header">
+                                   School
+                                </th>
+                                <td aria-label="Not recorded" class="govuk-table__cell govuk-table__cell--numeric">1%</td>
+                                <td aria-label="0-7 marks" class="govuk-table__cell govuk-table__cell--numeric">6%</td>
+                                <td aria-label="8-15 marks" class="govuk-table__cell govuk-table__cell--numeric">2%</td>
+                                <td aria-label="16-23 marks" class="govuk-table__cell govuk-table__cell--numeric">2%</td>
+                                <td aria-label="24-31 marks" class="govuk-table__cell govuk-table__cell--numeric">3%</td>
+                                <td aria-label="32-40 marks" class="govuk-table__cell govuk-table__cell--numeric">85%</td>
+                             </tr>
+                             <tr class="la-data govuk-table__row">
+                                <th scope="row" class="headline-measure govuk-table__header">
+                                   Local authority average
+                                </th>
+                                <td aria-label="Not recorded" class="govuk-table__cell govuk-table__cell--numeric">3%</td>
+                                <td aria-label="0-7 marks" class="govuk-table__cell govuk-table__cell--numeric">5%</td>
+                                <td aria-label="8-15 marks" class="govuk-table__cell govuk-table__cell--numeric">3%</td>
+                                <td aria-label="16-23 marks" class="govuk-table__cell govuk-table__cell--numeric">5%</td>
+                                <td aria-label="24-31 marks" class="govuk-table__cell govuk-table__cell--numeric">7%</td>
+                                <td aria-label="32-40 marks" class="govuk-table__cell govuk-table__cell--numeric">77%</td>
+                             </tr>
+                             <tr class="national-data">
+                                <th scope="row" class="headline-measure govuk-table__header">
+                                   National average
+                                </th>
+                                <td aria-label="Not recorded" class="govuk-table__cell govuk-table__cell--numeric">3%</td>
+                                <td aria-label="0-7 marks" class="govuk-table__cell govuk-table__cell--numeric">5%</td>
+                                <td aria-label="8-15 marks" class="govuk-table__cell govuk-table__cell--numeric">3%</td>
+                                <td aria-label="16-23 marks" class="govuk-table__cell govuk-table__cell--numeric">4%</td>
+                                <td aria-label="24-31 marks" class="govuk-table__cell govuk-table__cell--numeric">6%</td>
+                                <td aria-label="32-40 marks" class="govuk-table__cell govuk-table__cell--numeric">79%</td>
+                             </tr>
+                          </tbody>
+                       </table>
+                    </div>
+                   </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!--END OF TABS-->
+      </div>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text govuk-body-s">
+            Help us improve Analyse School Performance
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+            <p class="govuk-body-s">Don't include personal or financial information, for example your National Insurance number or credit card details</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://form.education.gov.uk/service/Data-collections-service-request-form" class="govuk-body-s" target="_blank">Analyse school performance</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with an <a href="https://contact.ofsted.gov.uk/contact-form" class="govuk-body-s" target="_blank">Ofsted inspection data summary report</a> (opens a new window).</p>
+            <p class="govuk-body-s">Report an issue with <a href="https://help.signin.education.gov.uk/contact/" class="govuk-body-s" target="_blank">DfE sign-in</a> (opens a new window).</p>
+        </div>
+      </details>
+  </main>
+</div>
+{% endblock %}
